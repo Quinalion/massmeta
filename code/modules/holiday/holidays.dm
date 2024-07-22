@@ -100,7 +100,7 @@ GLOBAL_LIST_INIT(holiday_mail, list())
 	switch(pattern)
 		if(PATTERN_RANDOM)
 			return "#[random_short_color()]"
-		//MASSMETA EDIT REMOVAL BEGIN (gay_removal)
+		//MASSMETA EDIT REMOVAL BEGIN (lgbt_removal)
 		/*
 		if(PATTERN_RAINBOW)
 			var/datum/holiday/pride_week/rainbow_datum = new()
@@ -437,7 +437,7 @@ GLOBAL_LIST_INIT(holiday_mail, list())
 	begin_month = JUNE
 	holiday_hat = /obj/item/clothing/head/costume/garland
 
-//MASSMETA EDIT REMOVAL BEGIN (gay_removal)
+//MASSMETA EDIT REMOVAL BEGIN (lgbt_removal)
 /*
 /datum/holiday/pride_week
 	name = PRIDE_WEEK
