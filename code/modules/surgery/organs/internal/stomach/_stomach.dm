@@ -161,12 +161,6 @@
 			if(SPT_PROB(round(-human.satiety/77), seconds_per_tick))
 				human.set_jitter_if_lower(10 SECONDS)
 			hunger_rate = 3 * HUNGER_FACTOR
-//MASSMETA ADDICTION BEGIN
-		if(HAS_TRAIT(H, TRAIT_EAT_MORE))
-			hunger_rate *= 3 //hunger rate tripled
-		if(HAS_TRAIT(H, TRAIT_BOTTOMLESS_STOMACH))
-			H.nutrition = min(H.nutrition, NUTRITION_LEVEL_MOSTLY_FULL) //capped, can never be truly full
-//MASSMETA ADDICTION END
 		hunger_rate *= hunger_modifier
 		hunger_rate *= human.physiology.hunger_mod
 		human.adjust_nutrition(-hunger_rate * seconds_per_tick)

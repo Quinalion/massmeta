@@ -140,6 +140,7 @@
 
 //Bloodsuckers defines ended//
 
+#define SINFULDEMON_TRAIT "Sinful Demon"
 #define ROLE_SINFULDEMON "Demon of Sin"
 
 //Sinful Demon defines ended//

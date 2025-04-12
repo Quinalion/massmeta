@@ -3,4 +3,3 @@
 
 #include "additional_circuit.dm"
 #include "antagonists.dm"
-#include "declarations.dm"

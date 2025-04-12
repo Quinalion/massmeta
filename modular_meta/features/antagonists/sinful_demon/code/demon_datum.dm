@@ -132,10 +132,10 @@
 			var/datum/action/cooldown/spell/jaunt/ethereal_jaunt/sin/jaunt = new(owner.current)
 			jaunt.Grant(owner.current)
 
-			ADD_TRAIT(owner.current, TRAIT_AGEUSIA, SINFULDEMON_TRAIT) // nothing disgusts you
-			ADD_TRAIT(owner.current, TRAIT_EAT_MORE, SINFULDEMON_TRAIT) // 3x hunger rate
-			ADD_TRAIT(owner.current, TRAIT_BOTTOMLESS_STOMACH, SINFULDEMON_TRAIT) // nutrition is capped for infinite eating
-			ADD_TRAIT(owner.current, TRAIT_VORACIOUS, SINFULDEMON_TRAIT) // eat and drink faster & eat infinite snacks
+			//ADD_TRAIT(owner.current, TRAIT_AGEUSIA, SINFULDEMON_TRAIT) // nothing disgusts you
+			//ADD_TRAIT(owner.current, TRAIT_EAT_MORE, SINFULDEMON_TRAIT) // 3x hunger rate
+			//ADD_TRAIT(owner.current, TRAIT_BOTTOMLESS_STOMACH, SINFULDEMON_TRAIT) // nutrition is capped for infinite eating
+			//ADD_TRAIT(owner.current, TRAIT_VORACIOUS, SINFULDEMON_TRAIT) // eat and drink faster & eat infinite snacks
 
 		if(SIN_GREED)
 			var/datum/action/cooldown/spell/shapeshift/demon/demon_form = new(owner.current)
