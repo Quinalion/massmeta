@@ -4,3 +4,7 @@
 #define IS_REVENGE_VASSAL(mob) (mob?.mind?.has_antag_datum(/datum/antagonist/vassal/revenge))
 
 //Blodsuckers helpers ended//
+
+#define IS_SINFULDEMON(mob) (M.mind && M.mind.has_antag_datum(/datum/antagonist/sinfuldemon))
+
+//Demons helpers ended//

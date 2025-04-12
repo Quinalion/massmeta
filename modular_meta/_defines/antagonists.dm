@@ -139,3 +139,7 @@
 #define TRAIT_COLDBLOODED "coldblooded"
 
 //Bloodsuckers defines ended//
+
+#define ROLE_SINFULDEMON "Demon of Sin"
+
+//Sinful Demon defines ended//
