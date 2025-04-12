@@ -51,5 +51,4 @@
 
 	cooldown_time = 25 SECONDS
 
-	jaunt_duration = 2 SECONDS
-	jaunt_out_time = 0 SECONDS
+	jaunt_duration = 3 SECONDS

@@ -1,7 +1,7 @@
 /datum/action/cooldown/spell/conjure/summon_greedslots
 	name = "Summon Slotmachine"
 	desc = "Summon forth a temporary slot machine of greed, allowing you to offer patrons a deadly game where the price is their life (and some money if you'd like) and the possible prize is a one use die of fate."
-	button_icon = 'modular_meta/features/antagonist/icons/actions_minor_antag.dmi'
+	button_icon = 'modular_meta/features/antagonists/icons/actions_minor_antag.dmi'
 	button_icon_state = "slots"
 	background_icon_state = "bg_demon"
 	overlay_icon_state = "bg_demon_border"
@@ -18,7 +18,7 @@
 /datum/action/cooldown/spell/conjure/cursed_item //conjure a random unique cursed item, which can impart various benefits, but always at a cost...
 	name = "Summon Cursed Item"
 	desc = "Manifest a random cursed object from hell beneath you. They have powerful applications, though often times with unintended consequences. Perfect for selling, or even using yourself if in a bind. Be aware, many of their effects can harm you too if used."
-	button_icon = 'modular_meta/features/antagonist/icons/actions_minor_antag.dmi'
+	button_icon = 'modular_meta/features/antagonists/icons/actions_minor_antag.dmi'
 	button_icon_state = "moneybag"
 	background_icon_state = "bg_demon"
 	overlay_icon_state = "bg_demon_border"
@@ -75,7 +75,7 @@
 /obj/item/greedcursed_bottle //recovers a portion of your max health, at the cost of being cursed into a shadowperson
 	name = "bottle of dark blood"
 	desc = "The contents seem to swirl constantly, and shrivel away when faced with bright light. If you drink this, you may just recover a part of yourself, though perhaps at a terrible cost..."
-	icon = 'icons/obj/antag/eldritch.dmi'
+	icon = 'icons/obj/antags/eldritch.dmi'
 	icon_state = "phylactery_1"
 
 /obj/item/greedcursed_bottle/attack_self(mob/living/carbon/human/user)

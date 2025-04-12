@@ -1,5 +1,3 @@
-import { multiline } from 'common/string';
-
 import { Antagonist, Category } from '../base';
 
 export const DEMONOFSIN_MECHANICAL_DESCRIPTION = multiline`

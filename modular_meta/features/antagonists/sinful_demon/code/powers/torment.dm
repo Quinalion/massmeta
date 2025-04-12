@@ -29,7 +29,7 @@
 		to_chat(victim, span_warning("A hideous feeling of agony dances around your mind before being suddenly dispelled."))
 		..()
 		return TRUE
-	playsound(caster, 'sound/magic/demon_attack1.ogg', 75, TRUE)
+	playsound(caster, 'sound/effects/magic/demon_attack1.ogg', 75, TRUE)
 	victim.adjust_eye_blur(15) //huge array of relatively minor effects.
 	victim.adjust_jitter(5 SECONDS)
 	victim.set_confusion_if_lower(5 SECONDS)

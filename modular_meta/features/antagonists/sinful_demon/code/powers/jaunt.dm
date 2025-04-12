@@ -3,12 +3,10 @@
 	desc = "Briefly turn to cinder and ash, allowing you to freely pass through objects."
 	background_icon_state = "bg_demon"
 	overlay_icon_state = "bg_demon_border"
-	sound = 'sound/magic/fireball.ogg'
+	sound = 'sound/effects/magic/fireball.ogg'
 	spell_requirements = NONE
 
 	cooldown_time = 50 SECONDS
 
-	jaunt_duration = 3 SECONDS
-	jaunt_out_time = 0.5 SECONDS
+	jaunt_duration = 3.5 SECONDS
 	jaunt_in_type = /obj/effect/temp_visual/dir_setting/ash_shift
-	jaunt_out_type = /obj/effect/temp_visual/dir_setting/ash_shift/out

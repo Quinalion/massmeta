@@ -38,7 +38,7 @@
 		to_chat(caster, span_warning("[target] resists your unholy jealousy!"))
 		to_chat(target, span_warning("A creeping feeling of jealousy dances around your mind before being suddenly dispelled."))
 		return FALSE
-	playsound(caster, 'sound/magic/demon_attack1.ogg', 75, TRUE)
+	playsound(caster, 'sound/effects/magic/demon_attack1.ogg', 75, TRUE)
 
 	if(caster.real_name == target.dna.real_name)
 		caster.balloon_alert(caster, "you are already [target]!")
