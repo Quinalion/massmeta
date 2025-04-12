@@ -60,6 +60,17 @@
 #include "bloodsuckers\code\vassal\vassal_datum.dm"
 #include "bloodsuckers\code\vassal\vassal_pinpointer.dm"
 #include "bloodsuckers\code\vassal\vassal_procs.dm"
+#include "sinful_demon\code\powers\jaunt.dm"
+#include "sinful_demon\code\powers\lesserdemon.dm"
+#include "sinful_demon\code\powers\shapeshift.dm"
+#include "sinful_demon\code\powers\torment.dm"
+#include "sinful_demon\code\sins\envy.dm"
+#include "sinful_demon\code\sins\gluttony.dm"
+#include "sinful_demon\code\sins\greed.dm"
+#include "sinful_demon\code\sins\pride.dm"
+#include "sinful_demon\code\sins\wrath.dm"
+#include "sinful_demon\code\demon_datum.dm"
+#include "sinful_demon\demon_event.dm"
 
 /datum/modpack/antogonists
 	id = "antagonists"
