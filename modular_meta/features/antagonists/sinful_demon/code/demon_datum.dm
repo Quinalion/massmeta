@@ -65,26 +65,24 @@
 	. = ..()
 	demonsin = pick(demonsins)
 
-/datum/antagonist/sinfuldemon/proc/forge_objectives()
-	var/datum/objective/demon/O
+proc/forge_objectives()
+	var/datum/objective/demon/demonsin
 	switch(demonsin)//the 5 most interesting of the 8 sins. Left out sloth because it sounds boring, couldn't think of a good enough objective/power for acedia, and lust for obvious reasons.
 		if(SIN_GLUTTONY)
-			O = new /datum/objective/demon/gluttony
+			/datum/objective/demon/gluttony
 		if(SIN_GREED)
-			O = new /datum/objective/demon/greed
+			/datum/objective/demon/greed
 		if(SIN_WRATH)
-			O = new /datum/objective/demon/wrath
+			/datum/objective/demon/wrath
 			if(prob(50))
-				var/N = pick(/datum/objective/assassinate, /datum/objective/assassinate/cloned, /datum/objective/assassinate/once)
+				var/N = pick(/datum/objective/assassinate, /datum/objective/maroon)
 				var/datum/objective/assassinate/kill_objective = new N
-				kill_objective.owner = owner
 				kill_objective.find_target()
-				objectives += kill_objective
 		if(SIN_ENVY)
-			O = new /datum/objective/demon/envy
+			/datum/objective/demon/envy
 		if(SIN_PRIDE)
-			O = new /datum/objective/demon/pride
-	objectives += O
+			/datum/objective/demon/pride
+	return
 
 /datum/antagonist/sinfuldemon/can_be_owned(datum/mind/new_owner)
 	. = ..()
@@ -112,7 +110,7 @@
 	to_chat(owner.current, "While blessed with the unholy ability to transform into your true form, this form is extremely obvious and vulnerable to holy weapons.")
 	to_chat(owner.current, "[span_warning("Do your best to complete your objectives without unnessecary death, unless you are a wrathful demon.")]<br>")
 	owner.announce_objectives()
-	SEND_SOUND(owner.current, sound('sound/magic/ethereal_exit.ogg'))
+	SEND_SOUND(owner.current, sound('sound/effects/magic/ethereal_exit.ogg'))
 	. = ..()
 
 /datum/antagonist/sinfuldemon/on_gain()
@@ -217,7 +215,7 @@
 	var/mob/living/carbon/carbon_source = source
 	if(!carbon_source)
 		return
-	if(istype(get_area(carbon_source), /area/chapel))
+	if(istype(get_area(carbon_source), /area/station/service/chapel))
 		demon_burn()
 
 /datum/antagonist/sinfuldemon/roundend_report()

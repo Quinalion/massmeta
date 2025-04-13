@@ -19,10 +19,10 @@
 
 /datum/action/cooldown/spell/touch/envy/Grant(mob/living/caster)
 	. = ..()
-	RegisterSignal(caster, COMSIG_MOB_ALLOWED, PROC_REF(envy_access))
+	RegisterSignal(PROC_REF(envy_access), src)
 
 /datum/action/cooldown/spell/touch/envy/Remove(mob/living/caster)
-	UnregisterSignal(caster, COMSIG_MOB_ALLOWED)
+	UnregisterSignal(src)
 	return ..()
 
 /datum/action/cooldown/spell/touch/envy/proc/envy_access(datum/source, obj/access_checker)
@@ -62,4 +62,3 @@
 	name = "Envious Hand"
 	desc = "A writhing, burning aura of jealousy, ready to be unleashed."
 	icon_state = "flagellation"
-	item_state = "hivemind"

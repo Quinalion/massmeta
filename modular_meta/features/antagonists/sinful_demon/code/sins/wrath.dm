@@ -25,7 +25,7 @@
 	invocation = "BURN IN HELL!!"
 	invocation_type = INVOCATION_SHOUT
 
-	sound = 'sound/magic/fireball.ogg'
+	sound = 'sound/effects/magic/fireball.ogg'
 	cooldown_time = 1 MINUTES
 	active_msg = span_notice("You ignite in a flash of hellfire!")
 	spell_requirements = NONE

@@ -21,7 +21,6 @@
 	name = "Vindictive Hand"
 	desc = "An utterly scornful mass of hateful energy, ready to strike."
 	icon_state = "flagellation"
-	item_state = "hivemind"
 
 /datum/action/cooldown/spell/touch/torment/cast_on_hand_hit(obj/item/melee/touch_attack/hand, mob/living/victim, mob/living/carbon/caster)
 	if(victim.can_block_magic())

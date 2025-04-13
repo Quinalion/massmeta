@@ -15,6 +15,10 @@
 	summon_radius = 0 //spawns on top of us
 	summon_type = list(/obj/structure/cursed_slot_machine/betterchance)
 
+//cursed slot machine betterchance
+/obj/structure/cursed_slot_machine/betterchance
+	win_prob = 10
+
 /datum/action/cooldown/spell/conjure/cursed_item //conjure a random unique cursed item, which can impart various benefits, but always at a cost...
 	name = "Summon Cursed Item"
 	desc = "Manifest a random cursed object from hell beneath you. They have powerful applications, though often times with unintended consequences. Perfect for selling, or even using yourself if in a bind. Be aware, many of their effects can harm you too if used."
@@ -33,7 +37,6 @@
 		/obj/item/katana/greedcursed,
 		/obj/item/reagent_containers/pill/greedcursed,
 		/obj/item/book_of_babel/greedcursed,
-		/obj/item/book/granter/action/spell/sacredflame/weak, //this one isnt actually 'cursed', but its also way weaker than the normal spell, and you're still setting yourself on fire
 		/obj/item/greedcursed_bottle
 	)
 
@@ -41,7 +44,7 @@
 	name = "peculiar katana"
 	desc = "The handle seems to dig into your flesh as you swing it..."
 	force = 20
-	block_force = 10
+	block_chance = 10
 	armour_penetration = 15
 	sharpness = SHARP_EDGED
 
@@ -53,8 +56,8 @@
 /obj/item/reagent_containers/pill/greedcursed //has a good amount of healing chems, you just have to deal with being set on fire first
 	name = "strange pill"
 	desc = "It smells of brimstone. Just looking it, you instinctively feel like this might heal you in exchange for something else..."
-	volume = 25
-	list_reagents = list(/datum/reagent/medicine/omnizine = 20, /datum/reagent/hellwater = 3, /datum/reagent/medicine/lavaland_extract = 2)
+	volume = 23
+	list_reagents = list(/datum/reagent/medicine/omnizine = 20, /datum/reagent/hellwater = 3)
 	icon_state = "pill21"
 
 /obj/item/book_of_babel/greedcursed
