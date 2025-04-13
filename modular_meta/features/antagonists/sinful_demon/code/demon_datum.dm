@@ -232,7 +232,7 @@ proc/forge_objectives()
 #undef SIN_WRATH
 
 /datum/antagonist/sinfuldemon/get_preview_icon()
-	var/icon/sinfuldemon_icon = icon('modular_meta/features/antagonists/icons/sinful_demon/mob.dmi', "lesserdaemon")
+	var/icon/sinfuldemon_icon = icon('modular_meta/features/antagonists/icons/sinful_demon/actions_demon.dmi', "daemontransform")
 
 	sinfuldemon_icon.Scale(ANTAGONIST_PREVIEW_ICON_SIZE, ANTAGONIST_PREVIEW_ICON_SIZE)
 
