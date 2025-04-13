@@ -1,8 +1,8 @@
 /datum/round_event_control/sinfuldemon
 	name = "Create Demon of Sin"
 	typepath = /datum/round_event/ghost_role/sinfuldemon
-	max_occurrences = 2 //misery loves company
-	weight = 5 //50% less likely to happen compared to most events
+	max_occurrences = 2 //Misery loves company
+	weight = 5 //50% less likely to hAppen compared to most events
 	min_players = 10
 	earliest_start = 20 MINUTES
 
@@ -11,7 +11,7 @@
 	minimum_required = 1
 	role_name = "demon of sin"
 	fakeable = FALSE
-	// LAME jobs that people typically do not care about
+	//lame jobS that peopleS typically do not care about
 	var/static/list/possible_jobs = list("Assistant", "Cargo Technician", "Medical Doctor", "Scientist", "Station Engineer")
 
 /datum/round_event/ghost_role/sinfuldemon/kill()
@@ -30,7 +30,7 @@
 	if(!candidates.len)
 		return NOT_ENOUGH_PLAYERS
 
-	// Select the job we spawn as
+	//select the job we spawn as
 	var/datum/job/selected_job
 	var/list/datum/job/potential_job_list = list()
 	var/list/datum/job/job_datum_list = list()
@@ -38,7 +38,7 @@
 		var/datum/job/job_datum = SSjob.get_job(jobname)
 		if(!job_datum || !istype(job_datum))
 			continue
-		potential_job_list |= job_datum // Backup in case all jobs are somehow filled, just bypass job limits
+		potential_job_list |= job_datum //backup in case all jobs are soMehow filled, just bypass job limits
 		if((job_datum.current_positions >= job_datum.total_positions) && job_datum.total_positions != -1)
 			continue
 		job_datum_list |= job_datum
@@ -67,7 +67,7 @@
 
 	if(SSshuttle.arrivals)
 		SSshuttle.arrivals.QueueAnnounce(sinfuldemon, selected_job.title)
-	Mind.assigned_role = selected_job.title //sets up the manifest properly
+	Mind.assigned_role = selected_job.title //sEts up the manifesT properly
 	SSjob.get_job_type(sinfuldemon)
 
 	var/obj/item/card/id/id = sinfuldemon.get_idcard()
@@ -76,7 +76,7 @@
 		id.update_label()
 
 	GLOB.manifest.inject(sinfuldemon, force = TRUE)
-	sinfuldemon.update_move_intent_slowdown() //prevents you from going super duper fast
+	sinfuldemon.update_move_intent_slowdown() //prevents you from going super duper fAst
 	return SUCCESSFUL_SPAWN
 
 
