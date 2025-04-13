@@ -198,8 +198,8 @@
 /obj/item/clothing/accessory/pride // actually patriotic
 	name = "patriotic pin"
 	desc = "A Nanotrasen holographic pin to show off your patriotic."
-	icon = 'massmeta/features/lgbt_removal/icons/pins.dmi'
-	worn_icon = 'massmeta/features/lgbt_removal/icons/pins_clothing.dmi'
+	icon = 'modular_meta/features/lgbt_removal/icons/pins.dmi'
+	worn_icon = 'modular_meta/features/lgbt_removal/icons/pins_clothing.dmi'
 	icon_state = "flag_russ"
 	unique_reskin = list(
 		"Russian flag" = "flag_russ",

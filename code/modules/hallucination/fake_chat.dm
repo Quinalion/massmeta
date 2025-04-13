@@ -91,9 +91,10 @@
 			))
 			*/
 			chosen = pick(list("Помогите!",
+				"Памагыте [pick_list_replacements(HALLUCINATION_FILE, "location")][prob(50)?"!":"!!"]",
 				"[pick_list_replacements(HALLUCINATION_FILE, "people")] [pick_list_replacements(HALLUCINATION_FILE, "accusations")]!",
 				"[pick_list_replacements(HALLUCINATION_FILE, "threat")] в [pick_list_replacements(HALLUCINATION_FILE, "location")][prob(50)?"!":"!!"]",
-				"[pick("Где [hallucinator.first_name()]?", "Поставьте [hallucinator.first_name()] на арест!")]",
+				"[pick("Где [first_name(hallucinator.name)]?", "Поставьте [first_name(hallucinator.name)] на арест!")]",
 				"[pick("Выз","ИИ, з","Отз")]овите шаттл!",
 				"ИИ [pick("малф", "мертв")]!!",
 				"Борги плохие!",
@@ -101,7 +102,7 @@
 			//MASSMETA EDIT CHANGE END
 
 		else
-			//MASSMETA EDIT CHANGE START (hallucinations_ru)
+			
 			chosen = pick(list(
 				"[pick_list_replacements(HALLUCINATION_FILE, "suspicion")]",
 				"[pick_list_replacements(HALLUCINATION_FILE, "conversation")]",
@@ -113,10 +114,8 @@
 				"[pick_list_replacements(HALLUCINATION_FILE, "aggressive")]",
 				"[pick_list_replacements(HALLUCINATION_FILE, "help")]!!",
 				"[pick_list_replacements(HALLUCINATION_FILE, "escape")]",
-				//"I'm infected, [pick_list_replacements(HALLUCINATION_FILE, "infection_advice")]!", // ORIGINAL
-				"У меня болезнь, [pick_list_replacements(HALLUCINATION_FILE, "infection_advice")]!",
+				"У меня болезнь, [pick_list_replacements(HALLUCINATION_FILE, "infection_advice")]!", //MASSMETA EDIT CHANGE (ru_traumas) - ORIGINAL: "I'm infected, [pick_list_replacements(HALLUCINATION_FILE, "infection_advice")]!",
 			))
-			//MASSMETA EDIT CHANGE END
 
 		chosen = capitalize(chosen)
 

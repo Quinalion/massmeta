@@ -1,4 +1,4 @@
-#include "code\moustache_ru.dm"
+//#include "code\moustache_ru.dm"
 #include "code\undersuit.dm"
 
 /datum/modpack/oguzok_cook

@@ -1,7 +1,7 @@
 /obj/item/choice_beacon/space_suit
 	name = "space suit delivery beacon"
 	desc = "Summon your space suit."
-	icon = 'massmeta/features/hardsuits/icons/device.dmi'
+	icon = 'modular_meta/features/hardsuits/icons/device.dmi'
 	icon_state = "suit_delivery"
 	w_class = WEIGHT_CLASS_BULKY // No pocket hard or mod suit
 
@@ -21,7 +21,7 @@
 
 		podspawn(list(
 			"target" = get_turf(src),
-			"style" = STYLE_BLUESPACE,
+			"style" = /datum/pod_style/advanced,
 			"spawn" = hardsuit_kit,
 		))
 		return

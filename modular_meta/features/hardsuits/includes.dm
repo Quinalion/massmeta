@@ -1,4 +1,6 @@
 #include "code\armor.dm"
+#include "code\buy_suit.dm"
+#include "code\clown.dm"
 #include "code\hardsuit.dm"
 #include "code\hardsuit_helmet.dm"
 #include "code\hardsuit_types.dm"

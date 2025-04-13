@@ -75,7 +75,7 @@
 
 		//MASSMETA EDIT ADDITION BEGIN (kvass)
 		if(icon_state == "kvass")
-			crushed_can.icon = 'massmeta/features/kvass/icons/janitor.dmi'
+			crushed_can.icon = 'modular_meta/features/kvass_beverage/icons/janitor.dmi'
 		//MASSMETA EDIT ADDITION END
 
 		qdel(src)
@@ -92,7 +92,7 @@
 	crushed_can.icon_state = icon_state
 	//MASSMETA EDIT ADDITION BEGIN (kvass)
 	if(icon_state == "kvass")
-		crushed_can.icon = 'massmeta/icons/items/janitor.dmi'
+		crushed_can.icon = 'modular_meta/features/kvass_beverage/icons/janitor.dmi'
 	//MASSMETA EDIT ADDITION END
 	if(!proj.damage || proj.damage_type != BRUTE)
 		return
@@ -156,7 +156,7 @@
 
 	//MASSMETA EDIT ADDITION BEGIN (kvass)
 	if(icon_state == "kvass")
-		crushed_can.icon = 'massmeta/features/kvass/icons/janitor.dmi'
+		crushed_can.icon = 'modular_meta/features/kvass_beverage/icons/janitor.dmi'
 	//MASSMETA EDIT ADDITION END
 
 	moveToNullspace()

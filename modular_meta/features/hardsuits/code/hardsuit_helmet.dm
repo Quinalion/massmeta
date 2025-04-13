@@ -1,8 +1,8 @@
 /obj/item/clothing/head/helmet/space/hardsuit
 	name = "hardsuit helmet"
 	desc = "A special helmet designed for work in a hazardous, low-pressure environment. Has radiation shielding."
-	icon = 'massmeta/features/hardsuits/icons/hats.dmi'
-	worn_icon = 'massmeta/features/hardsuits/icons/head.dmi'
+	icon = 'modular_meta/features/hardsuits/icons/hats.dmi'
+	worn_icon = 'modular_meta/features/hardsuits/icons/head.dmi'
 	icon_state = "hardsuit0-engineering"
 	// no inhand_icon_state because its a part of hardsuit = you can't take it
 	strip_delay = 80

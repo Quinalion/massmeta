@@ -10,11 +10,13 @@
 /* --FEATURES-- */
 
 #include "features\additional_circuit\includes.dm"
+#include "features\admin_smites\includes.dm"
 #include "features\antagonists\includes.dm"
 #include "features\antagonists_balance\includes.dm"
 #include "features\better_ui\includes.dm"
 #include "features\cheburek_car\includes.dm"
 #include "features\del_required_experiments\includes.dm"
+#include "features\hardsuits\includes.dm"
 #include "features\hierophant_club_resprite\includes.dm"
 #include "features\kvass_beverage\includes.dm"
 #include "features\lead_pipe\includes.dm"
@@ -24,7 +26,6 @@
 #include "features\soviet_crate\includes.dm"
 #include "features\uplink_items\includes.dm"
 #include "features\venom_knife\includes.dm"
-#include "features\wizard_spells\includes.dm"
 
 
 /* -- REVERTS -- */

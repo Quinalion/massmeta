@@ -24,7 +24,6 @@
 #include "code\_compile_options.dm"
 #include "code\_experiments.dm"
 #include "code\world.dm"
-#include "code\__DEFINES\___meta_modpaks_includes.dm"
 #include "code\__DEFINES\__globals.dm"
 #include "code\__DEFINES\_atoms.dm"
 #include "code\__DEFINES\_bitfields.dm"
@@ -6610,5 +6609,6 @@
 #include "interface\fonts\spess_font.dm"
 #include "interface\fonts\tiny_unicode.dm"
 #include "interface\fonts\vcr_osd_mono.dm"
+#include "massmeta\modular_meta_features.dm"
 #include "modular_meta\main_modular_include.dm"
 // END_INCLUDE

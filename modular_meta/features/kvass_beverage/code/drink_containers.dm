@@ -4,7 +4,7 @@
 /obj/item/reagent_containers/cup/soda_cans/kvass
 	name = "Kvass"
 	desc = "Kvaaaaaaaass."
-	icon = 'massmeta/features/kvass/icons/soda.dmi'
+	icon = 'modular_meta/features/kvass_beverage/icons/soda.dmi'
 	icon_state = "kvass"
 	list_reagents = list(/datum/reagent/consumable/kvass = 30)
 	drink_type = GRAIN
@@ -16,5 +16,5 @@
 	required_drink_type = /datum/reagent/consumable/kvass
 	name = "glass of Kvass"
 	desc = "A glass of Kvaaaaaaass."
-	icon = 'massmeta/features/kvass/icons/drinks.dmi'
+	icon = 'modular_meta/features/kvass_beverage/icons/drinks.dmi'
 	icon_state = "kvass"

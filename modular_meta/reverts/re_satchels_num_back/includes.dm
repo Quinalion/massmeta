@@ -1,5 +1,3 @@
-#include "code\hooch_for_assistants.dm"
-
 /datum/modpack/re_satchels_num_back
 	id = "re_satchels_num_back"
 	name = "Подпольных сумок - 10!"
