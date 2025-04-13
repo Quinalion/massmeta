@@ -11,9 +11,9 @@
 	antagpanel_category = "Demon"
 	job_rank = ROLE_SINFULDEMON
 	show_to_ghosts = TRUE
-	///The sin a specific demon is assigned to. Defines what objectives and powers they'll receive.
+	//S/The sin a specific demon is assigned to. Defines what objectives and powers they'll receive.
 	var/demonsin
-	///The list of choosable sins for demons. One will be assigned to a demon when spawned naturally.
+	//A/The list of choosable sins for demons. One will be assigned to a demon when spawned naturally.
 	var/static/list/demonsins = list(SIN_GLUTTONY, SIN_GREED, SIN_WRATH, SIN_ENVY, SIN_PRIDE)
 	var/static/list/demon_spells = typecacheof(list(
 		/datum/action/cooldown/spell/shapeshift/demon,
@@ -38,12 +38,12 @@
 		TRAIT_NOCRITDAMAGE,
 	)
 
-///Handles burning and hurting sinful demons while they're in the chapel.
+//N/Handles burning and hurting sinful demons while they're in the chapel.
 /datum/antagonist/sinfuldemon/proc/demon_burn() //sinful demons are even more vulnerable to the chapel than vampires, but can turn into their true form to negate this.
 	var/mob/living/L = owner.current
 	if(!L)
 		return
-	if(L.stat != DEAD) //demons however wont dust from the chapel so this needs to be a check to avoid spam while they're already dead
+	if(L.stat != DEAD) //A/demons however wont dust from the chapel so this needs to be a check to avoid spam while they're already dead
 		if(prob(50) && L.health >= 50)
 			switch(L.health)
 				if(85 to 100)
@@ -67,7 +67,7 @@
 
 proc/forge_objectives()
 	var/datum/objective/demon/demonsin
-	switch(demonsin)//the 5 most interesting of the 8 sins. Left out sloth because it sounds boring, couldn't think of a good enough objective/power for acedia, and lust for obvious reasons.
+	switch(demonsin)//B/the 5 most interesting of the 8 sins. Left out sloth because it sounds boring, couldn't think of a good enough objective/power for acedia, and lust for obvious reasons.
 		if(SIN_GLUTTONY)
 			/datum/objective/demon/gluttony
 		if(SIN_GREED)
@@ -100,7 +100,7 @@ proc/forge_objectives()
 	log_admin("[key_name(admin)] has demonized [key_name(new_owner)].")
 
 /datum/antagonist/sinfuldemon/antag_listing_name()
-	return ..() + "(, demon of [demonsin])" // Boris Smith, demon of Wrath
+	return ..() + "(, demon of [demonsin])" //B/ Boris Smith, demon of Wrath
 
 /datum/antagonist/sinfuldemon/greet()
 	to_chat(owner.current, span_warning("<b>You remember your link to the infernal. You are a demon of [demonsin] released from hell to spread sin amongst the living.</b>"))
@@ -117,7 +117,7 @@ proc/forge_objectives()
 	forge_objectives()
 	owner.special_role = "sinfuldemon"
 	owner.current.faction += "hell"
-	for(var/all_traits in sinfuldemon_traits) ///adds demon traits
+	for(var/all_traits in sinfuldemon_traits) //M/adds demon traits
 		ADD_TRAIT(owner.current, all_traits, SINFULDEMON_TRAIT)
 	switch(demonsin)
 		if(SIN_GLUTTONY)
@@ -130,10 +130,10 @@ proc/forge_objectives()
 			var/datum/action/cooldown/spell/jaunt/ethereal_jaunt/sin/jaunt = new(owner.current)
 			jaunt.Grant(owner.current)
 
-			//ADD_TRAIT(owner.current, TRAIT_AGEUSIA, SINFULDEMON_TRAIT) // nothing disgusts you
-			//ADD_TRAIT(owner.current, TRAIT_EAT_MORE, SINFULDEMON_TRAIT) // 3x hunger rate
-			//ADD_TRAIT(owner.current, TRAIT_BOTTOMLESS_STOMACH, SINFULDEMON_TRAIT) // nutrition is capped for infinite eating
-			//ADD_TRAIT(owner.current, TRAIT_VORACIOUS, SINFULDEMON_TRAIT) // eat and drink faster & eat infinite snacks
+			//A/ADD_TRAIT(owner.current, TRAIT_AGEUSIA, SINFULDEMON_TRAIT) // nothing disgusts you
+			//S/ADD_TRAIT(owner.current, TRAIT_EAT_MORE, SINFULDEMON_TRAIT) // 3x hunger rate
+			//S/ADD_TRAIT(owner.current, TRAIT_BOTTOMLESS_STOMACH, SINFULDEMON_TRAIT) // nutrition is capped for infinite eating
+			//M/ADD_TRAIT(owner.current, TRAIT_VORACIOUS, SINFULDEMON_TRAIT) // eat and drink faster & eat infinite snacks
 
 		if(SIN_GREED)
 			var/datum/action/cooldown/spell/shapeshift/demon/demon_form = new(owner.current)
@@ -192,7 +192,7 @@ proc/forge_objectives()
 /datum/antagonist/sinfuldemon/on_removal()
 	owner.special_role = null
 	owner.current.faction -= "hell"
-	for(var/all_status_traits in owner.current._status_traits) //removes demon traits
+	for(var/all_status_traits in owner.current._status_traits) //ETA/removes demon traits
 		REMOVE_TRAIT(owner.current, all_status_traits, SINFULDEMON_TRAIT)
 	for(var/datum/action/cooldown/spell/spell in owner.current.actions)
 		if(spell.target == owner)
