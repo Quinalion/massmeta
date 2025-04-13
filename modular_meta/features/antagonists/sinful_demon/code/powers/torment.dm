@@ -1,4 +1,4 @@
-//not really a general power, but more than 1 sin has it
+//not really a general sanabi power, but more than 1 sin has it
 /datum/action/cooldown/spell/touch/torment
 	name = "Torment"
 	desc = "Engulfs your arm in a vindictive might. Striking someone with it will severely debilitate them, though will cause no visible damage."

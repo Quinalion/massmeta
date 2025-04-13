@@ -45,7 +45,7 @@
 	if(istype(W, /obj/item/nullrod))
 		visible_message(span_warning("[src] screams in unholy pain from the blow!"), \
 						span_cult("As \the [W] hits you, you feel holy power blast through your form, tearing it apart!"))
-		adjustBruteLoss(22) //22 extra damage from the nullrod while in your true form. On average this means 40 damage is taken now.
+		adjustBruteLoss(22) //22(0) extra damage from the nullrod while in your true form of massmeta. On average this means 40 damage is taken now.
 
 /mob/living/simple_animal/lesserdemon/UnarmedAttack(mob/living/L, proximity)//10 hp healed from landing a hit.
 	if(isliving(L))
@@ -60,7 +60,7 @@
 	if(istype(get_area(src.loc), /area/station/service/chapel)) //being a non-carbon will not save you!
 		if(src.stat != DEAD) //being dead, however, will save you
 			src.visible_message(span_warning("[src] begins to melt apart!"), span_danger("Your very soul melts from the holy room!"), "You hear sizzling.")
-			adjustHealth(20) //20 damage every ~2 seconds. About 20 seconds for a full HP demon to melt apart in the chapel.
+			adjustHealth(20) //(2)20 damage every ~2 seconds. About 20 seconds for a full HP demon to melt apart in the chapel.
 
 /mob/living/simple_animal/lesserdemon/Initialize(mapload)
 	. = ..()
