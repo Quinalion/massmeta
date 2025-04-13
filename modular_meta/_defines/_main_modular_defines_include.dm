@@ -3,3 +3,4 @@
 
 #include "additional_circuit.dm"
 #include "antagonists.dm"
+#include "re_hooch_heals_assistants.dm"

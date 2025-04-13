@@ -6,28 +6,40 @@
 #include "__modpack\modpack.dm" //modpack obj
 #include "__modpack\modpacks_subsystem.dm" //actually mods subsystem + tgui in "tgui/packages/tgui/interfaces/Modpacks.tsx"
 
+
 /* --FEATURES-- */
 
 #include "features\additional_circuit\includes.dm"
 #include "features\antagonists\includes.dm"
-#if CHEBUREK_CAR
-	#include "features\cheburek_car\includes.dm"
-#endif
+#include "features\antagonists_balance\includes.dm"
+#include "features\better_ui\includes.dm"
+#include "features\cheburek_car\includes.dm"
+#include "features\del_required_experiments\includes.dm"
+#include "features\hierophant_club_resprite\includes.dm"
+#include "features\kvass_beverage\includes.dm"
+#include "features\lead_pipe\includes.dm"
+#include "features\lgbt_removal\includes.dm"
+#include "features\oguzok_cook\includes.dm"
+#include "features\quirk_augmented\includes.dm"
+#include "features\soviet_crate\includes.dm"
 #include "features\uplink_items\includes.dm"
 #include "features\venom_knife\includes.dm"
+#include "features\wizard_spells\includes.dm"
+
+
 /* -- REVERTS -- */
 
-#include "reverts\revert_glasses_protect_welding\includes.dm"
+#include "reverts\re_beheading\includes.dm"
+#include "reverts\re_buff_lasers\includes.dm"
+#include "reverts\re_glasses_protect_welding\includes.dm"
+#include "reverts\re_hooch_heals_assistants\includes.dm"
+#include "reverts\re_satchels_num_back\includes.dm"
 
 /* --TRANSLATIONS-- */
 
 #include "ru_translate\ru_ai_laws\includes.dm"
-
-#if RU_CRAYONS
-	#include "ru_translate\ru_crayons\includes.dm"
-#endif
+#include "ru_translate\ru_crayons\includes.dm"
+#include "ru_translate\ru_pets_commands\includes.dm"
+#include "ru_translate\ru_traumas\includes.dm"
 #include "ru_translate\ru_tweak_say_fonts\includes.dm"
-#if RU_VENDORS
-	#include "ru_translate\ru_vendors\includes.dm"
-#endif
-
+#include "ru_translate\ru_vendors\includes.dm"
