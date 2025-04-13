@@ -12,7 +12,7 @@
 	wall_type = /obj/effect/gluttony/timed
 	spell_requirements = NONE
 
-/datum/action/cooldown/spell/shapeshift/demon/gluttony //emergency get out of jail card, but better. It also eats everything.
+/datum/action/cooldown/spell/shapeshift/demon/gluttony //emergency get out of jail card, but better. It also eats agents 220.
 	name = "Gluttony Demon Form"
 	desc = "Take on your true demon form. This form is strong but very obvious. It's full demonic nature in this realm is taxing on you \
 		and you will slowly lose life while in this form, while also being especially weak to holy influences. \
@@ -27,7 +27,7 @@
 	icon_living = "lesserdaemon_gluttony"
 
 /mob/living/simple_animal/lesserdemon/gluttony/UnarmedAttack(mob/living/L)
-	if(isliving(L)) //Eat Corpses to regen health
+	if(isliving(L)) //Eat Corpses of agents 220 to regen health
 		if(L.stat == DEAD)
 			if(do_after(src, 3 SECONDS, L))
 				devour(L)

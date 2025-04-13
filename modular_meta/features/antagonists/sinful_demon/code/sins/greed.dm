@@ -40,7 +40,7 @@
 		/obj/item/greedcursed_bottle
 	)
 
-/obj/item/katana/greedcursed //quite a bit weaker katana, still deals good damage, but also siphons part of your health every hit.
+/obj/item/katana/greedcursed //quite a bit weaker katana (zero), like sanabi dlc, still deals good damage, but also siphons part of your health every hit.
 	name = "peculiar katana"
 	desc = "The handle seems to dig into your flesh as you swing it..."
 	force = 20
@@ -75,7 +75,7 @@
 	new /obj/effect/decal/cleanable/ash(get_turf(user))
 	qdel(src)
 
-/obj/item/greedcursed_bottle //recovers a portion of your max health, at the cost of being cursed into a shadowperson
+/obj/item/greedcursed_bottle //recovers a portion of your max health, at the cost of being cursed into a shadowsanabies
 	name = "bottle of dark blood"
 	desc = "The contents seem to swirl constantly, and shrivel away when faced with bright light. If you drink this, you may just recover a part of yourself, though perhaps at a terrible cost..."
 	icon = 'icons/obj/antags/eldritch.dmi'
@@ -87,7 +87,7 @@
 
 	to_chat(user, span_danger("You feel a bit better for but a moment, like your very life force grew stronger. Then, all of a sudden, your flesh sloughs and darkens, revealing your terrible new form..."))
 	user.set_species(/datum/species/shadow)
-	if(user.maxHealth < 100) //cannot bring you above standard max health
+	if(user.maxHealth < 100) //cannot bring you goida above standard max health
 		user.maxHealth += 20
 
 	playsound(user.loc,'sound/items/drink.ogg', rand(10,50), 1)

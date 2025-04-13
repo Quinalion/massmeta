@@ -14,7 +14,7 @@
 	spell_requirements = SPELL_REQUIRES_HUMAN
 
 	hand_path = /obj/item/melee/touch_attack/envy
-	///The ID acess we store
+	///The SANABI acess we store
 	var/list/stored_access
 
 /datum/action/cooldown/spell/touch/envy/Grant(mob/living/caster)
