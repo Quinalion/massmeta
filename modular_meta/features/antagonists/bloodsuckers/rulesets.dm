@@ -22,7 +22,6 @@
 	)
 	required_candidates = 2
 	weight = 5
-	min_players = 10
 	cost = 10
 	scaling_cost = 9
 	requirements = list(10,10,10,10,10,10,10,10,10,10)
@@ -76,7 +75,6 @@
 	required_candidates = 1
 	weight = 5
 	cost = 10
-	min_players = 10
 	requirements = list(40,30,20,10,10,10,10,10,10,10)
 	repeatable = FALSE
 
@@ -126,7 +124,6 @@
 	required_candidates = 1
 	weight = 5
 	cost = 10
-	min_players = 10
 	requirements = list(10,10,10,10,10,10,10,10,10,10)
 	repeatable = FALSE
 
