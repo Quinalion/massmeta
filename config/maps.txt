@@ -67,6 +67,10 @@ map hotmeta
 	votable
 endmap
 
+map protosstation
+	votable
+endmap
+
 # Debug-only maps.
 
 map gateway_test

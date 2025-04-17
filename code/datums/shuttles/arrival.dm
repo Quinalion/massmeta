@@ -36,4 +36,8 @@
 
 /datum/map_template/shuttle/arrival/protos
 	suffix = "protos"
+<<<<<<< Updated upstream
 	name = "arrival shuttle (Protos)"
+=======
+	name = "arrival shuttle (Protos)"
+>>>>>>> Stashed changes

@@ -21,6 +21,7 @@
 		#include "map_files\KiloStation\KiloStation.dmm"
 		#include "map_files\ProtoBoxStation\ProtoBoxStation.dmm"
 		#include "map_files\hotmeta\hotmeta.dmm"
+		#include "map_files\protosstation\protos.dmm"
 		//MASSMETA EDIT ADDITON END
 
 		#ifdef CIBUILDING
