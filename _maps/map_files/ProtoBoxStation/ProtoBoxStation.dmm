@@ -11723,6 +11723,7 @@
 /area/station/hallway/secondary/entry)
 "aKk" = (
 /obj/effect/turf_decal/trimline/neutral/filled/line,
+/obj/effect/turf_decal/trimline/neutral/filled/mid_joiner,
 /turf/open/floor/iron/edge,
 /area/station/hallway/secondary/entry)
 "aKl" = (
@@ -14374,6 +14375,7 @@
 "aSb" = (
 /obj/machinery/airalarm/directional/south,
 /obj/effect/turf_decal/trimline/neutral/filled/line,
+/obj/effect/turf_decal/trimline/neutral/filled/mid_joiner,
 /turf/open/floor/iron/edge,
 /area/station/hallway/secondary/entry)
 "aSd" = (
@@ -37412,6 +37414,10 @@
 /area/station/science/ordnance)
 "cRN" = (
 /obj/effect/turf_decal/trimline/neutral/filled/end,
+/obj/effect/turf_decal/trimline/neutral/filled/mid_joiner,
+/obj/effect/turf_decal/trimline/neutral/filled/mid_joiner{
+	dir = 4
+	},
 /turf/open/floor/iron/corner{
 	dir = 1
 	},
@@ -39698,6 +39704,7 @@
 /obj/effect/turf_decal/trimline/neutral/filled/line{
 	dir = 6
 	},
+/obj/effect/turf_decal/trimline/neutral/filled/mid_joiner,
 /turf/open/floor/iron/edge,
 /area/station/hallway/secondary/entry)
 "epW" = (
@@ -46314,6 +46321,9 @@
 /obj/effect/turf_decal/trimline/neutral/filled/line{
 	dir = 4
 	},
+/obj/effect/turf_decal/trimline/neutral/filled/mid_joiner{
+	dir = 4
+	},
 /turf/open/floor/iron/edge{
 	dir = 4
 	},
@@ -51165,6 +51175,9 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/neutral/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/neutral/filled/mid_joiner{
 	dir = 4
 	},
 /turf/open/floor/iron/edge{
