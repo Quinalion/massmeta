@@ -21,6 +21,7 @@
 		JOB_CYBORG,
 	)
 	required_candidates = 2
+	minimum_players = 10
 	weight = 5
 	cost = 10
 	scaling_cost = 9
@@ -73,6 +74,7 @@
 		ROLE_POSITRONIC_BRAIN,
 	)
 	required_candidates = 1
+	minimum_players = 10
 	weight = 5
 	cost = 10
 	requirements = list(40,30,20,10,10,10,10,10,10,10)
@@ -122,6 +124,7 @@
 		JOB_CYBORG,
 	)
 	required_candidates = 1
+	minimum_players = 10
 	weight = 5
 	cost = 10
 	requirements = list(10,10,10,10,10,10,10,10,10,10)
