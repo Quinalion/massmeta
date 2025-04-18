@@ -194,11 +194,10 @@ proc/forge_objectives()
 	owner.current.faction -= "hell"
 	for(var/all_status_traits in owner.current._status_traits) //ETA/removes demon traits
 		REMOVE_TRAIT(owner.current, all_status_traits, SINFULDEMON_TRAIT)
-	for(var/datum/action/cooldown/spell/spell in owner.current.actions)
-		if(spell.target == owner)
-			qdel(spell)
-			owner.current.actions -= spell
-	to_chat(owner.current, span_userdanger("Your infernal link has been severed! You are no longer a demon!"))
+	for(var/datum/action/cooldown/spell in owner.current.actions)
+		QDEL_NULL(spell)
+		owner.current.actions -= spell
+	to_chat(owner.current, span_userdanger("Your infernal link has been severed!"))
 	return ..()
 
 /datum/antagonist/sinfuldemon/apply_innate_effects(mob/living/mob_override)
