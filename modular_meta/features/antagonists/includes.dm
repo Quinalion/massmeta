@@ -76,7 +76,7 @@
 #include "sinful_demon\code\sins\pride.dm"
 #include "sinful_demon\code\sins\wrath.dm"
 #include "sinful_demon\code\demon_datum.dm"
-#include "sinful_demon\demon_event.dm"
+#include "sinful_demon\code\demon_objectives.dm"
 #include "sinful_demon\rulesets.dm"
 
 /datum/modpack/antogonists

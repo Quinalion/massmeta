@@ -14,7 +14,7 @@ const DemonOfSin: Antagonist = {
       Whether it is gluttony or greed, pride or wrath, you will embody your deadly sin. The mortals will give you opportunity.
     `,
   ],
-  category: Category.Midround,
+  category: Category.Roundstart,
 };
 
 export default DemonOfSin;

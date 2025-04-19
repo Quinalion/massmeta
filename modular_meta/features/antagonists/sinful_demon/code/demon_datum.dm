@@ -65,24 +65,20 @@
 	. = ..()
 	demonsin = pick(demonsins)
 
-proc/forge_objectives()
-	var/datum/objective/demon/demonsin
-	switch(demonsin)//B/the 5 most interesting of the 8 sins. Left out sloth because it sounds boring, couldn't think of a good enough objective/power for acedia, and lust for obvious reasons.
+/datum/antagonist/sinfuldemon/forge_objectives()
+	var/datum/objective/demon/O
+	switch(demonsin)//the 5 most interesting of the 8 sins. Left out sloth because it sounds boring, couldn't think of a good enough objective/power for acedia, and lust for obvious reasons.
 		if(SIN_GLUTTONY)
-			/datum/objective/demon/gluttony
+			O = new /datum/objective/demon/gluttony
 		if(SIN_GREED)
-			/datum/objective/demon/greed
+			O = new /datum/objective/demon/greed
 		if(SIN_WRATH)
-			/datum/objective/demon/wrath
-			if(prob(50))
-				var/N = pick(/datum/objective/assassinate, /datum/objective/maroon)
-				var/datum/objective/assassinate/kill_objective = new N
-				kill_objective.find_target()
+			O = new /datum/objective/demon/wrath
 		if(SIN_ENVY)
-			/datum/objective/demon/envy
+			O = new /datum/objective/demon/envy
 		if(SIN_PRIDE)
-			/datum/objective/demon/pride
-	return
+			O = new /datum/objective/demon/pride
+	objectives += O
 
 /datum/antagonist/sinfuldemon/can_be_owned(datum/mind/new_owner)
 	. = ..()
@@ -231,7 +227,7 @@ proc/forge_objectives()
 #undef SIN_WRATH
 
 /datum/antagonist/sinfuldemon/get_preview_icon()
-	var/icon/sinfuldemon_icon = icon('modular_meta/features/antagonists/icons/sinful_demon/actions_demon.dmi', "daemontransform")
+	var/icon/sinfuldemon_icon = icon('modular_meta/features/antagonists/icons/sinful_demon/passport_photo.dmi', "sinfuldemon")
 
 	sinfuldemon_icon.Scale(ANTAGONIST_PREVIEW_ICON_SIZE, ANTAGONIST_PREVIEW_ICON_SIZE)
 

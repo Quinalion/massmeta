@@ -142,5 +142,6 @@
 
 #define SINFULDEMON_TRAIT "Sinful Demon"
 #define ROLE_SINFULDEMON "Demon of Sin"
+#define ROLE_DEMONINFILTRATION "Demon Infiltration"
 
 //Sinful Demon defines ended//
