@@ -11,7 +11,7 @@
 	invocation = "TORMENT"
 	invocation_type = INVOCATION_SHOUT
 
-	cooldown_time = 20 SECONDS
+	cooldown_time = 30 SECONDS
 	spell_requirements = NONE
 
 	hand_path = /obj/item/melee/touch_attack/torment
@@ -36,7 +36,7 @@
 	victim.adjust_hallucinations(20 SECONDS)
 	victim.Immobilize(3 SECONDS)
 	victim.Stun(1 SECONDS)
-	victim.adjustOrganLoss(ORGAN_SLOT_BRAIN, 25)
+	victim.adjustOrganLoss(ORGAN_SLOT_BRAIN, 10)
 	victim.visible_message(span_danger("[victim] cringes in pain as they hold their head for a second!"))
 	victim.emote("scream")
 	to_chat(victim, span_warning("You feel an explosion of pain erupt in your mind!"))

@@ -20,7 +20,7 @@
 		JOB_AI,
 		JOB_CYBORG,
 	)
-	required_candidates = 2
+	required_candidates = 1
 	minimum_players = 10
 	weight = 5
 	cost = 10

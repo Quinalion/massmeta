@@ -27,8 +27,8 @@
 	faction = list("hell")
 	attack_verb_continuous = "wildly tears into"
 	attack_verb_simple = "wildly tears into"
-	maxHealth = 200
-	health = 200
+	maxHealth = 150
+	health = 150
 	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
 	obj_damage = 40
 	melee_damage_lower = 20

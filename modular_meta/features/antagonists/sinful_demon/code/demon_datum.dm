@@ -34,7 +34,6 @@
 	var/static/list/sinfuldemon_traits = list(
 		TRAIT_GENELESS,
 		TRAIT_STABLEHEART,
-		TRAIT_NOSOFTCRIT,
 		TRAIT_NOCRITDAMAGE,
 	)
 
