@@ -16,7 +16,7 @@ endmap
 # Production-level maps.
 
 map birdshot
-	maxplayers 30
+	minplayers 30
 	votable
 endmap
 
@@ -31,7 +31,7 @@ map icebox
 endmap
 
 map metastation
-	minplayers 10
+	minplayers 5
 	#voteweight 0.5
 	votable
 endmap
@@ -69,7 +69,6 @@ map bearcat
 endmap
 
 map hotmeta
-	maxplayers 15
 	votable
 endmap
 
