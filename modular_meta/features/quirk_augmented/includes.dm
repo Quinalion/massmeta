@@ -1,8 +1,7 @@
 #include "code\augmented.dm"
 
-/datum/modpack/cheburek_car
-	id = "cheburek_car"
-	icon = 'modular_meta/features/cheburek_car/preview.dmi'
+/datum/modpack/quirk_augmented
+	id = "quirk_augmented"
 	name = "Квирк на робо-конечности"
 	group = "Features"
 	desc = "Добавляет положительный квирк на нормальные робо конечности, стоит 4 поинта"
