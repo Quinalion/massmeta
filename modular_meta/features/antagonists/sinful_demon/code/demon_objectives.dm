@@ -15,3 +15,6 @@
 
 /datum/objective/demon/pride
 	explanation_text = "Become as popular, powerful, and influential to as many people possible. Commiting crimes is likely to make you less popular with most people."
+
+/datum/objective/demon/sloth
+	explanation_text = "Everyone want to sleep, you too."

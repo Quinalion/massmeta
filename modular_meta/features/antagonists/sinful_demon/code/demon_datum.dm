@@ -9,12 +9,14 @@
 	name = "Sinful Demon"
 	roundend_category = "demons of sin"
 	antagpanel_category = "Demon"
+	antag_hud_name = "demon"
 	job_rank = ROLE_SINFULDEMON
 	show_to_ghosts = TRUE
+	hud_icon = 'modular_meta/features/antagonists/icons/sinful_demon/demon_icons.dmi'
 	//S/The sin a specific demon is assigned to. Defines what objectives and powers they'll receive.
 	var/demonsin
 	//A/The list of choosable sins for demons. One will be assigned to a demon when spawned naturally.
-	var/static/list/demonsins = list(SIN_GLUTTONY, SIN_GREED, SIN_WRATH, SIN_ENVY, SIN_PRIDE)
+	var/static/list/demonsins = list(SIN_GLUTTONY, SIN_GREED, SIN_WRATH, SIN_ENVY, SIN_PRIDE, SIN_SLOTH)
 	var/static/list/demon_spells = typecacheof(list(
 		/datum/action/cooldown/spell/shapeshift/demon,
 		/datum/action/cooldown/spell/shapeshift/demon/gluttony,
@@ -29,6 +31,7 @@
 		/datum/action/cooldown/spell/conjure/cursed_item,
 		/datum/action/cooldown/spell/jaunt/ethereal_jaunt/sin,
 		/datum/action/cooldown/spell/jaunt/ethereal_jaunt/sin/wrath,
+		/datum/action/cooldown/spell/touch/sleepy,
 		))
 
 	var/static/list/sinfuldemon_traits = list(
@@ -66,7 +69,7 @@
 
 /datum/antagonist/sinfuldemon/forge_objectives()
 	var/datum/objective/demon/O
-	switch(demonsin)//the 5 most interesting of the 8 sins. Left out sloth because it sounds boring, couldn't think of a good enough objective/power for acedia, and lust for obvious reasons.
+	switch(demonsin)
 		if(SIN_GLUTTONY)
 			O = new /datum/objective/demon/gluttony
 		if(SIN_GREED)
@@ -77,6 +80,8 @@
 			O = new /datum/objective/demon/envy
 		if(SIN_PRIDE)
 			O = new /datum/objective/demon/pride
+		if(SIN_SLOTH)
+			O = new /datum/objective/demon/sloth
 	objectives += O
 
 /datum/antagonist/sinfuldemon/can_be_owned(datum/mind/new_owner)
@@ -180,6 +185,19 @@
 			heal_hand.Grant(owner.current)
 
 			var/datum/action/cooldown/spell/jaunt/ethereal_jaunt/sin/jaunt = new(owner.current)
+			jaunt.Grant(owner.current)
+
+		if(SIN_SLOTH)
+			var/datum/action/cooldown/spell/shapeshift/demon/sloth/sloth_demon = new(owner.current)
+			sloth_demon.Grant(owner.current)
+
+			var/datum/action/cooldown/spell/touch/sleepy/mimir = new(owner.current)
+			mimir.Grant(owner.current)
+
+			var/datum/action/cooldown/spell/touch/torment/pain_hand = new(owner.current)
+			pain_hand.Grant(owner.current)
+
+			var/datum/action/cooldown/spell/jaunt/ethereal_jaunt/sin/sloth/jaunt = new(owner.current)
 			jaunt.Grant(owner.current)
 
 	return ..()

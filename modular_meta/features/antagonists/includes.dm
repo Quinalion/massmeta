@@ -74,6 +74,7 @@
 #include "sinful_demon\code\sins\gluttony.dm"
 #include "sinful_demon\code\sins\greed.dm"
 #include "sinful_demon\code\sins\pride.dm"
+#include "sinful_demon\code\sins\sloth.dm"
 #include "sinful_demon\code\sins\wrath.dm"
 #include "sinful_demon\code\demon_datum.dm"
 #include "sinful_demon\code\demon_objectives.dm"

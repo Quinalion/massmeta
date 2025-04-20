@@ -25,6 +25,7 @@
 	real_name = "gluttonous demon"
 	icon_state = "lesserdaemon_gluttony"
 	icon_living = "lesserdaemon_gluttony"
+	speed = 0.5
 
 /mob/living/simple_animal/lesserdemon/gluttony/UnarmedAttack(mob/living/L)
 	if(isliving(L)) //Eat Corpses of agents 220 to regen health
