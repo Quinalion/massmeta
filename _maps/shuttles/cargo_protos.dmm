@@ -47,10 +47,7 @@
 	name = "Supply Shuttle Airlock"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
-/obj/docking_port/mobile/supply{
-	dir = 4;
-	port_direction = 8
-	},
+/obj/docking_port/mobile/supply,
 /turf/open/floor/plating,
 /area/shuttle/supply)
 "o" = (
@@ -70,7 +67,11 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/titanium/yellow,
+/area/shuttle/supply)
+"t" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/shuttle/supply)
 "z" = (
 /obj/effect/turf_decal/loading_area{
@@ -83,6 +84,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/stripes/corner,
+/obj/machinery/light/directional/west,
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
 "B" = (
@@ -131,9 +133,6 @@
 	},
 /turf/open/floor/mineral/titanium/yellow,
 /area/shuttle/supply)
-"N" = (
-/turf/template_noop,
-/area/template_noop)
 "S" = (
 /obj/effect/turf_decal/siding/yellow{
 	dir = 10
@@ -155,19 +154,17 @@
 /area/shuttle/supply)
 
 (1,1,1) = {"
-N
+q
 a
 a
 a
 a
 a
-a
-Y
+t
 Y
 "}
 (2,1,1) = {"
 a
-q
 H
 s
 K
@@ -178,7 +175,6 @@ f
 "}
 (3,1,1) = {"
 a
-q
 F
 C
 i
@@ -188,13 +184,12 @@ V
 f
 "}
 (4,1,1) = {"
-N
-a
+q
 h
 D
 a
 n
 o
-Y
+t
 Y
 "}

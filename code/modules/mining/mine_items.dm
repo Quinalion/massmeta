@@ -145,7 +145,8 @@
 
 /obj/docking_port/stationary/mining_home/protos
 	roundstart_template = /datum/map_template/shuttle/mining/protos
-	height = 7
+	dwidth = 4
+	height = 4
 
 /obj/docking_port/stationary/mining_home/common
 	name = "SS13: Common Mining Dock"
