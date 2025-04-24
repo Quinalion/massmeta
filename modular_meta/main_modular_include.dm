@@ -23,6 +23,7 @@
 #include "features\tier5\includes.dm"
 #include "features\copytech\includes.dm"
 #include "features\cargo_teleporter\includes.dm"
+#include "features\not_enough_decor\includes.dm"
 /* -- REVERTS -- */
 
 #include "reverts\revert_glasses_protect_welding\includes.dm"
