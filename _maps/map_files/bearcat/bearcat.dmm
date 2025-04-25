@@ -1586,6 +1586,9 @@
 /obj/effect/spawner/random/engineering/material_rare,
 /obj/effect/spawner/random/food_or_drink/booze,
 /obj/item/poster/random_contraband,
+/obj/effect/spawner/random/decoration/lavalamp,
+/obj/effect/spawner/random/decoration/lavalamp,
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/iron,
 /area/station/cargo/lower)
 "iJ" = (
@@ -2487,6 +2490,9 @@
 "ny" = (
 /obj/structure/cable,
 /obj/machinery/blackbox_recorder,
+/obj/machinery/ntnet_relay{
+	pixel_y = 21
+	},
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/station/tcommsat/computer)
 "nA" = (
@@ -2505,9 +2511,9 @@
 /turf/open/floor/iron,
 /area/station/engineering/main)
 "nB" = (
-/obj/machinery/announcement_system,
 /obj/machinery/light/small/directional/north,
 /obj/machinery/camera/autoname/directional/west,
+/obj/machinery/announcement_system,
 /turf/open/floor/plating,
 /area/station/maintenance/solars/port)
 "nD" = (
@@ -2773,11 +2779,11 @@
 /area/station/ai_monitored/security/armory)
 "pw" = (
 /obj/structure/table/wood,
-/obj/item/flashlight/lamp,
 /obj/machinery/button/door/directional/east{
 	id = "dorms1";
 	name = "Shutters Control"
 	},
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/carpet,
 /area/station/commons/dorms/room1)
 "pG" = (
@@ -2813,6 +2819,13 @@
 	},
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
+"pN" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/vending/mod_modules,
+/turf/open/floor/catwalk_floor,
+/area/station/maintenance/floor3/port/aft)
 "pO" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/firedoor,
@@ -9768,11 +9781,11 @@
 /area/station/maintenance/floor2/starboard/aft)
 "ZF" = (
 /obj/structure/table/wood,
-/obj/item/flashlight/lamp,
 /obj/machinery/button/door/directional/east{
 	id = "dorms2";
 	name = "Shutters Control"
 	},
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/carpet/blue,
 /area/station/commons/dorms/room2)
 "ZH" = (
@@ -172951,7 +172964,7 @@ Jo
 Jo
 Jo
 cU
-lB
+pN
 EY
 LX
 TU
