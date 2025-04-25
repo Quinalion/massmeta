@@ -12044,6 +12044,9 @@
 /area/station/command/heads_quarters/rd)
 "dnk" = (
 /obj/structure/dresser,
+/obj/effect/spawner/random/decoration/lavalamp{
+	pixel_y = 16
+	},
 /turf/open/floor/carpet,
 /area/station/commons/dorms)
 "dnn" = (
@@ -22601,6 +22604,7 @@
 /obj/item/wrench{
 	pixel_y = 17
 	},
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "grD" = (
@@ -38912,6 +38916,7 @@
 "lcB" = (
 /obj/machinery/light/small/directional/west,
 /obj/structure/table/wood,
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/carpet,
 /area/station/commons/dorms)
 "lcY" = (
@@ -49554,6 +49559,7 @@
 	dir = 8
 	},
 /obj/machinery/bluespace_vendor/directional/west,
+/obj/machinery/vending/mod_modules,
 /turf/open/floor/iron,
 /area/station/hallway/primary/starboard)
 "ofl" = (
@@ -61089,6 +61095,7 @@
 /area/station/ai_monitored/turret_protected/aisat_interior)
 "rlV" = (
 /obj/structure/table/wood,
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/wood,
 /area/station/commons/dorms)
 "rmn" = (
@@ -65306,6 +65313,9 @@
 "svH" = (
 /obj/machinery/light/small/directional/west,
 /obj/structure/dresser,
+/obj/effect/spawner/random/decoration/lavalamp{
+	pixel_y = 16
+	},
 /turf/open/floor/wood,
 /area/station/commons/dorms)
 "svR" = (
@@ -79499,6 +79509,7 @@
 /obj/machinery/light/small/directional/west,
 /obj/structure/table/wood,
 /obj/effect/landmark/start/hangover,
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/carpet,
 /area/station/commons/dorms)
 "wIC" = (

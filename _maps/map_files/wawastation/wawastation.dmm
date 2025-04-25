@@ -26879,6 +26879,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/iron/dark,
 /area/station/service/bar)
 "jwK" = (
@@ -57526,6 +57527,7 @@
 /area/station/command/corporate_dock)
 "tQt" = (
 /obj/structure/table/wood/poker,
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/wood,
 /area/station/commons/lounge)
 "tQy" = (
@@ -63268,6 +63270,7 @@
 /obj/effect/turf_decal/tile/purple/half/contrasted{
 	dir = 1
 	},
+/obj/machinery/vending/mod_modules,
 /turf/open/floor/iron/white,
 /area/station/science/lobby)
 "vSy" = (

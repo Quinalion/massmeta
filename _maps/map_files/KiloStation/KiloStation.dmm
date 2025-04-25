@@ -30444,6 +30444,7 @@
 	normaldoorcontrol = 1;
 	specialfunctions = 4
 	},
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/wood,
 /area/station/commons/locker)
 "jPB" = (
@@ -34974,6 +34975,7 @@
 /obj/structure/table,
 /obj/machinery/firealarm/directional/north,
 /obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/iron/dark,
 /area/station/commons/locker)
 "lqN" = (
@@ -36111,6 +36113,7 @@
 /obj/structure/table/wood,
 /obj/item/folder/red,
 /obj/item/lighter,
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/wood,
 /area/station/commons/locker)
 "lJD" = (
@@ -44291,6 +44294,7 @@
 /obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
 	dir = 8
 	},
+/obj/machinery/vending/mod_modules,
 /turf/open/floor/iron/dark,
 /area/station/hallway/primary/central/fore)
 "oAS" = (
@@ -48750,6 +48754,7 @@
 /obj/machinery/newscaster/directional/east,
 /obj/effect/landmark/start/hangover/closet,
 /obj/effect/mapping_helpers/broken_floor,
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/wood,
 /area/station/commons/locker)
 "pXU" = (
@@ -64687,6 +64692,7 @@
 	pixel_y = -24
 	},
 /obj/effect/mapping_helpers/broken_floor,
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/wood,
 /area/station/commons/locker)
 "vef" = (
@@ -68438,6 +68444,10 @@
 /obj/machinery/cell_charger,
 /obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
 	dir = 1
+	},
+/obj/effect/spawner/random/decoration/lavalamp{
+	pixel_y = 14;
+	pixel_x = 3
 	},
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
