@@ -20,6 +20,7 @@
 		#include "map_files\KiloStation\KiloStation.dmm"
 		#include "map_files\ProtoBoxStation\ProtoBoxStation.dmm"
 		#include "map_files\hotmeta\hotmeta.dmm"
+		#include "_maps\map_files\bearcat\bearcat.dmm"
 		//MASSMETA EDIT ADDITON END
 
 		#ifdef CIBUILDING

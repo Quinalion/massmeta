@@ -690,6 +690,7 @@
 		/obj/machinery/vending/wardrobe/science_wardrobe = "SciDrobe",
 		/obj/machinery/vending/wardrobe/sec_wardrobe = "SecDrobe",
 		/obj/machinery/vending/wardrobe/viro_wardrobe = "ViroDrobe",
+		/obj/machinery/vending/mod_modules = "NanoMOD", // MASSMETA EDIT: Добавляем вендор модулей для МОДсьютов
 	)
 
 /obj/item/circuitboard/machine/vendor/screwdriver_act(mob/living/user, obj/item/tool)

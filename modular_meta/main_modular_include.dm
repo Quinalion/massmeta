@@ -34,8 +34,8 @@
 #include "features\tier5\includes.dm"
 #include "features\copytech\includes.dm"
 #include "features\cargo_teleporter\includes.dm"
-
-
+#include "features\not_enough_decor\includes.dm"
+#include "features\mod_vend\includes.dm"
 /* -- REVERTS -- */
 
 #include "reverts\re_beheading\includes.dm"

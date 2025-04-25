@@ -16,33 +16,33 @@ endmap
 # Production-level maps.
 
 map birdshot
-	maxplayers 66
+	minplayers 30
 	votable
 endmap
 
 map deltastation
-	minplayers 50
+	minplayers 20
 	votable
 endmap
 
 map icebox
-	minplayers 25
+	minplayers 20
 	votable
 endmap
 
 map metastation
-	minplayers 25
+	minplayers 5
 	#voteweight 0.5
 	votable
 endmap
 
 map tramstation
-	minplayers 35
+	minplayers 25
 	votable
 endmap
 
 map nebulastation
-	minplayers 35
+	minplayers 25
 	votable
 endmap
 
@@ -51,15 +51,20 @@ map pubbystation
 endmap
 
 map kilostation
-	maxplayers 35
+	maxplayers 15
 	votable
 
 map wawastation
 	votable
-	minplayers 40
+	minplayers 20
 endmap
 
 map protoboxstation
+	votable
+endmap
+
+map bearcat
+	maxplayers 3
 	votable
 endmap
 
