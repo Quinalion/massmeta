@@ -6,5 +6,5 @@
 //	icon = 'modular_meta/features/not_enough_decor/preview.dmi'
 	name = "Больше декора"
 	group = "Features"
-	desc = "Новые виды декалей для пола, новые лампы, в общем дохуя чего."
+	desc = "Новые виды декалей для пола, новые лампы."
 	author = "Sanecman"
