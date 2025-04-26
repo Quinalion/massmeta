@@ -14,7 +14,7 @@
 	icon_state = "lesserdaemon"
 	icon_living = "lesserdaemon"
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
-	speed = 0.25
+	speed = 1
 	combat_mode = TRUE
 	stop_automated_movement = 1
 	status_flags = CANPUSH
@@ -31,8 +31,8 @@
 	health = 150
 	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
 	obj_damage = 40
-	melee_damage_lower = 20
-	melee_damage_upper = 20
+	melee_damage_lower = 15
+	melee_damage_upper = 15
 	wound_bonus = -15
 	lighting_cutoff_red = 22
 	lighting_cutoff_green = 5

@@ -8,11 +8,11 @@
 	desc = "*yawns* aaw.. battle? Ahhh no.. i.. go.. to... to.. sleeep.."
 	icon_state = "lesserdaemon_sloth"
 	icon_living = "lesserdaemon_sloth"
-	speed = 0.75
-	maxHealth = 300
-	health = 300
-	melee_damage_lower = 24
-	melee_damage_upper = 24
+	speed = 1.5
+	maxHealth = 200
+	health = 200
+	melee_damage_lower = 20
+	melee_damage_upper = 20
 	melee_damage_type = OXY
 
 /datum/action/cooldown/spell/touch/sleepy
