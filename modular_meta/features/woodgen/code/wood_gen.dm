@@ -29,5 +29,5 @@
 	icon_state = "icg_0"
 	base_icon_state = "icg"
 	max_sheets = 60
-	time_per_sheet = 300
-	power_gen = 1 KILO JOULES
+	time_per_sheet = 900
+	power_gen = 3 KILO JOULES
