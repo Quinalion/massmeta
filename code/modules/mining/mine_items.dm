@@ -145,7 +145,6 @@
 
 /obj/docking_port/stationary/mining_home/protos
 	roundstart_template = /datum/map_template/shuttle/mining/protos
-	dwidth = 4
 	height = 4
 
 /obj/docking_port/stationary/mining_home/common
