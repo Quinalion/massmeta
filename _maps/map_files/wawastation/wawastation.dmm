@@ -102,6 +102,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/catwalk_floor/iron_dark/telecomms,
 /area/station/ai_monitored/turret_protected/ai)
 "aby" = (
@@ -18090,6 +18091,7 @@
 "gts" = (
 /obj/structure/railing/corner,
 /obj/structure/cable/layer3,
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/catwalk_floor/iron_dark/telecomms,
 /area/station/ai_monitored/turret_protected/ai)
 "gty" = (

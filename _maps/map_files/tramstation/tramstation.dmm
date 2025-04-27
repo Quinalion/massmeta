@@ -14017,6 +14017,7 @@
 	},
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/west,
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/circuit,
 /area/station/ai_monitored/turret_protected/ai)
 "dMg" = (
@@ -40063,6 +40064,7 @@
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/cable,
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/circuit,
 /area/station/ai_monitored/turret_protected/ai)
 "ndz" = (

@@ -4322,6 +4322,7 @@
 "aqw" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/east,
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/circuit,
 /area/station/ai_monitored/turret_protected/ai)
 "aqx" = (
@@ -48721,6 +48722,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/circuit,
 /area/station/ai_monitored/turret_protected/ai)
 "uaC" = (

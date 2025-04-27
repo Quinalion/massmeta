@@ -4323,6 +4323,7 @@
 	pixel_x = 5;
 	pixel_y = -24
 	},
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/circuit,
 /area/station/ai_monitored/turret_protected/ai)
 "amq" = (
@@ -49831,6 +49832,7 @@
 	pixel_x = -10
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/circuit,
 /area/station/ai_monitored/turret_protected/ai)
 "lLh" = (

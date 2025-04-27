@@ -45496,6 +45496,7 @@
 	name = "Primary AI Core Access";
 	req_access = list("ai_upload")
 	},
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/ai)
 "qeZ" = (
@@ -56461,6 +56462,7 @@
 	},
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/ai)
 "tUH" = (

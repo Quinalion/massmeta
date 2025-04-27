@@ -22045,6 +22045,7 @@
 	name = "Primary AI Core Access";
 	req_access = list("ai_upload")
 	},
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/engine,
 /area/station/ai_monitored/turret_protected/ai)
 "hlJ" = (
@@ -34208,6 +34209,7 @@
 	name = "Primary AI Core Access";
 	req_access = list("ai_upload")
 	},
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/engine,
 /area/station/ai_monitored/turret_protected/ai)
 "lcN" = (

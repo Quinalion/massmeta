@@ -680,6 +680,7 @@
 "ec" = (
 /obj/structure/cable,
 /obj/machinery/light/floor,
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/iron/dark/telecomms,
 /area/station/tcommsat/server)
 "ed" = (
@@ -2810,6 +2811,7 @@
 	dir = 4
 	},
 /obj/machinery/light/floor,
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/ai_monitored/turret_protected/ai)
 "pM" = (
