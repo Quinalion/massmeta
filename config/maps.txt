@@ -70,6 +70,10 @@ map bearcat
 	votable
 endmap
 
+# Только через админ кнопки
+map stroika
+endmap
+
 map hotmeta
 	votable
 endmap
