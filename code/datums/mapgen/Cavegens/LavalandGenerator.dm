@@ -6,7 +6,7 @@
 		SPAWN_MEGAFAUNA = 2,
 		/obj/effect/spawner/random/lavaland_mob/goliath = 50,
 		/obj/effect/spawner/random/lavaland_mob/legion = 30,
-		/obj/effect/spawner/random/lavaland_mob/watcher = 30,
+		/obj/effect/spawner/random/lavaland_mob/watcher = 40,
 		/mob/living/basic/mining/bileworm = 20,
 		/mob/living/basic/mining/brimdemon = 20,
 		/mob/living/basic/mining/lobstrosity/lava = 20,
