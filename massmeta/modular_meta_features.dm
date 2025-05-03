@@ -32,7 +32,6 @@
 #include "code\game\objects\items\tools\wirecutters.dm"
 #include "code\game\objects\items\tools\wrench.dm"
 #include "code\obj\items\storage\boxes\clothes_boxes.dm"
-#include "code\obj\structures\display_case.dm"
 #include "code\obj\items\clothing\belt.dm"
 #include "code\datums\components\crafting\weapon_ammo.dm"
 #include "code\modules\ammunition\ballistic\shotgun.dm"
