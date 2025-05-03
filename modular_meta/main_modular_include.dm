@@ -17,6 +17,7 @@
 #include "features\cheburek_car\includes.dm"
 #include "features\colossus\includes.dm"
 #include "features\del_required_experiments\includes.dm"
+#include "features\gases\includes.dm"
 #include "features\hardsuits\includes.dm"
 #include "features\hierophant_club_resprite\includes.dm"
 #include "features\kvass_beverage\includes.dm"
