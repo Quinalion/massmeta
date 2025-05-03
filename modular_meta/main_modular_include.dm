@@ -10,7 +10,7 @@
 /* --FEATURES-- */
 
 #include "features\additional_circuit\includes.dm"
-#include "features\admin_smites\includes.dm"
+#include "features\admin\includes.dm"
 #include "features\antagonists\includes.dm"
 #include "features\antagonists_balance\includes.dm"
 #include "features\better_ui\includes.dm"
