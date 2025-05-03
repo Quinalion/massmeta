@@ -34,7 +34,6 @@
 #include "code\obj\items\storage\boxes\clothes_boxes.dm"
 #include "code\obj\structures\display_case.dm"
 #include "code\obj\items\clothing\belt.dm"
-#include "code\modules\announcers.dm"
 #include "code\datums\components\crafting\weapon_ammo.dm"
 #include "code\modules\ammunition\ballistic\shotgun.dm"
 #include "code\modules\projectiles\projectile\bullets\shotgun.dm"
