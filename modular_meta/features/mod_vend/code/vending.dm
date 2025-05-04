@@ -21,7 +21,7 @@
 		/obj/item/mod/module/visor/meson = 2,
 	)
 	contraband = list(
-		/obj/item/mod/module/jump_jet = 2,
+		/obj/item/mod/module/energy_shield = 1,
 		/obj/item/mod/module/atrocinator = 2,
 		/obj/item/mod/module/springlock = 1,
 	)
@@ -34,6 +34,7 @@
 		/obj/item/mod/module/hat_stabilizer = 3,
 		/obj/item/mod/module/fishing_glove = 2,
 		/obj/item/mod/module/anomaly_locked/kinesis/prebuilt/locked = 4,
+		/obj/item/mod/module/jump_jet = 5,
 	)
 	refill_canister = /obj/item/vending_refill/mod_modules
 	default_price = PAYCHECK_COMMAND
