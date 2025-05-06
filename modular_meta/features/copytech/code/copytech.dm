@@ -104,7 +104,9 @@
 		O.set_anchored(TRUE)
 		O.layer = ABOVE_MOB_LAYER
 		O.alpha = 0
-		var/mutable_appearance/result = mutable_appearance(O.icon, O.icon_state)
+		var/mutable_appearance/result = mutable_appearance(initial(O.icon), initial(O.icon_state))
+		result.pixel_x = initial(O.pixel_x)
+		result.pixel_y = initial(O.pixel_y)
 		var/mutable_appearance/scanline = mutable_appearance('icons/effects/effects.dmi',"transform_effect")
 		O.transformation_animation(result, time = get_replication_speed(tier_rate), scanline.appearance)
 		active_item = O
@@ -114,14 +116,16 @@
 		return TRUE
 
 	if (ispath(current_design, /mob/living))
-		if(tier_rate < 8)
+		if(tier_rate < 4)
 			say("Upgrade micro-laser for further work.")
 			return FALSE
 		var/mob/living/M = new current_design(drop_loc)
 		M.SetParalyzed(get_replication_speed(tier_rate) * 1.5)
 		M.emote("agony")
 		M.layer = ABOVE_MOB_LAYER
-		var/mutable_appearance/result = mutable_appearance(M.icon, M.icon_state)
+		var/mutable_appearance/result = mutable_appearance(initial(M.icon), initial(M.icon_state))
+		result.pixel_x = initial(M.pixel_x)
+		result.pixel_y = initial(M.pixel_y)
 		var/mutable_appearance/scanline = mutable_appearance('icons/effects/effects.dmi',"transform_effect")
 		M.transformation_animation(result, time = get_replication_speed(tier_rate), transform_overlay = scanline)
 		active_item = M

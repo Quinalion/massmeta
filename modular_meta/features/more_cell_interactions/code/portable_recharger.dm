@@ -10,6 +10,7 @@
 	var/obj/item/case_portable_recharger/portable_recharger
 
 /obj/machinery/recharger/RefreshParts()
+	. = ..()
 	for(var/obj/item/stock_parts/capacitor/C in component_parts)
 		recharge_coeff = C.rating
 
