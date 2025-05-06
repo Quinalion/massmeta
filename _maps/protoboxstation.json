@@ -4,7 +4,7 @@
 	"map_path": "map_files/ProtoBoxStation",
 	"map_file": "ProtoBoxStation.dmm",
     "shuttles": {
-	    "cargo": "cargo_protos",
+	    "cargo": "cargo_box",
 	    "ferry": "ferry_fancy",
 	    "whiteship": "whiteship_box",
 	    "emergency": "emergency_box"
