@@ -34,7 +34,7 @@
 /turf/open/floor/iron/large,
 /area/shuttle/arrival)
 "k" = (
-/obj/item/wallframe/tram/controller,
+/obj/machinery/transport/tram_controller,
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/arrival)
 "l" = (

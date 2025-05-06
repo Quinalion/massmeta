@@ -6,11 +6,11 @@
 /obj/effect/turf_decal/bot,
 /obj/machinery/computer/shuttle/mining/common,
 /turf/open/floor/mineral/plastitanium,
-/area/space)
+/area/shuttle/mining)
 "b" = (
 /obj/effect/spawner/structure/window/reinforced/shuttle,
 /turf/open/floor/plating,
-/area/space)
+/area/shuttle/mining)
 "c" = (
 /obj/structure/table,
 /obj/effect/turf_decal/siding/dark{
@@ -25,10 +25,10 @@
 	pixel_y = 6
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/space)
+/area/shuttle/mining)
 "d" = (
 /turf/closed/wall/mineral/titanium,
-/area/space)
+/area/shuttle/mining)
 "f" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 10
@@ -38,10 +38,10 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/titanium,
-/area/space)
+/area/shuttle/mining)
 "p" = (
 /turf/closed/wall/mineral/plastitanium,
-/area/space)
+/area/shuttle/mining)
 "t" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 6
@@ -51,7 +51,7 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/titanium,
-/area/space)
+/area/shuttle/mining)
 "u" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 5
@@ -64,11 +64,11 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/titanium,
-/area/space)
+/area/shuttle/mining)
 "A" = (
 /obj/machinery/power/shuttle_engine/propulsion,
 /turf/open/floor/plating,
-/area/space)
+/area/shuttle/mining)
 "D" = (
 /obj/item/clothing/suit/hazardvest{
 	desc = "A high-visibility lifejacket complete with whistle and slot for oxygen tanks.";
@@ -106,12 +106,12 @@
 	dir = 5
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/space)
+/area/shuttle/mining)
 "E" = (
 /obj/machinery/power/shuttle_engine/heater,
 /obj/effect/spawner/structure/window/reinforced/shuttle,
 /turf/open/floor/plating,
-/area/space)
+/area/shuttle/mining)
 "H" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
@@ -124,7 +124,7 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/titanium,
-/area/space)
+/area/shuttle/mining)
 "I" = (
 /obj/machinery/door/airlock/titanium{
 	name = "Mining Shuttle Airlock"
@@ -139,7 +139,7 @@
 	port_direction = 4
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/space)
+/area/shuttle/mining)
 "R" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 9
@@ -156,7 +156,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/space)
+/area/shuttle/mining)
 
 (1,1,1) = {"
 d
