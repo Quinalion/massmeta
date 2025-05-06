@@ -17,7 +17,7 @@
 	name = "Shuttle computer"
 	},
 /obj/effect/turf_decal/bot,
-/turf/open/floor/iron/smooth,
+/turf/open/floor/pod,
 /area/shuttle/arrival)
 "h" = (
 /obj/structure/chair/comfy/shuttle{
@@ -33,6 +33,10 @@
 	},
 /turf/open/floor/iron/large,
 /area/shuttle/arrival)
+"k" = (
+/obj/item/wallframe/tram/controller,
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/arrival)
 "l" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/medkit/regular{
@@ -41,7 +45,7 @@
 	},
 /obj/item/storage/medkit/regular,
 /obj/machinery/light/directional/south,
-/turf/open/floor/iron/edge,
+/turf/open/floor/pod,
 /area/shuttle/arrival)
 "m" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
@@ -54,7 +58,8 @@
 	},
 /obj/effect/turf_decal/bot,
 /obj/machinery/light/directional/west,
-/turf/open/floor/iron/smooth,
+/obj/structure/sign/tram_plate/directional/west,
+/turf/open/floor/pod,
 /area/shuttle/arrival)
 "o" = (
 /obj/structure/chair/comfy/shuttle{
@@ -103,7 +108,8 @@
 	},
 /obj/effect/turf_decal/bot,
 /obj/machinery/light/directional/east,
-/turf/open/floor/iron/smooth,
+/obj/structure/sign/tram_plate/directional/east,
+/turf/open/floor/pod,
 /area/shuttle/arrival)
 "v" = (
 /obj/structure/chair/comfy/shuttle{
@@ -120,13 +126,16 @@
 	dir = 1
 	},
 /obj/machinery/light/directional/west,
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
 /turf/open/floor/iron/large,
 /area/shuttle/arrival)
 "w" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/shuttle/arrival)
 "y" = (
-/turf/open/floor/iron/smooth,
+/turf/open/floor/pod,
 /area/shuttle/arrival)
 "z" = (
 /obj/structure/fans/tiny,
@@ -145,7 +154,7 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/emergency,
 /obj/effect/turf_decal/bot,
-/turf/open/floor/iron/edge,
+/turf/open/floor/pod,
 /area/shuttle/arrival)
 "D" = (
 /obj/structure/chair/comfy/shuttle{
@@ -162,6 +171,9 @@
 	dir = 1
 	},
 /obj/machinery/light/directional/east,
+/obj/effect/turf_decal/siding/dark{
+	dir = 1
+	},
 /turf/open/floor/iron/large,
 /area/shuttle/arrival)
 "F" = (
@@ -194,7 +206,7 @@
 "J" = (
 /obj/structure/closet/crate/internals,
 /obj/effect/turf_decal/bot/left,
-/turf/open/floor/iron/edge,
+/turf/open/floor/pod,
 /area/shuttle/arrival)
 "M" = (
 /obj/structure/chair/comfy/shuttle{
@@ -275,14 +287,14 @@
 	},
 /obj/structure/chair/comfy/shuttle,
 /obj/effect/turf_decal/delivery,
-/turf/open/floor/iron/smooth,
+/turf/open/floor/pod,
 /area/shuttle/arrival)
 
 (1,1,1) = {"
 w
 m
 a
-d
+k
 a
 d
 a
