@@ -6560,6 +6560,7 @@
 /obj/machinery/airalarm/directional/north,
 /obj/effect/spawner/random/structure/closet_private,
 /obj/item/clothing/under/suit/tan,
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/carpet,
 /area/station/commons/dorms)
 "cqv" = (
@@ -7429,6 +7430,7 @@
 /obj/effect/turf_decal/tile/purple/half/contrasted{
 	dir = 1
 	},
+/obj/machinery/vending/mod_modules,
 /turf/open/floor/iron/white,
 /area/station/science/lobby)
 "cGV" = (
@@ -8210,6 +8212,7 @@
 "cUP" = (
 /obj/effect/spawner/random/structure/closet_private,
 /obj/item/clothing/under/misc/assistantformal,
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/wood,
 /area/station/commons/dorms)
 "cUX" = (
@@ -10844,6 +10847,7 @@
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 4
 	},
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/iron/dark,
 /area/station/command/bridge)
 "dTX" = (
@@ -11998,6 +12002,7 @@
 /obj/item/clothing/under/misc/assistantformal,
 /obj/effect/landmark/start/hangover,
 /obj/effect/spawner/random/structure/closet_private,
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/wood,
 /area/station/commons/dorms)
 "eme" = (
@@ -43241,6 +43246,7 @@
 /obj/machinery/airalarm/directional/north,
 /obj/effect/spawner/random/structure/closet_private,
 /obj/item/clothing/under/misc/assistantformal,
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/wood,
 /area/station/commons/dorms)
 "piB" = (
@@ -43500,6 +43506,7 @@
 /obj/machinery/airalarm/directional/north,
 /obj/effect/spawner/random/structure/closet_private,
 /obj/item/clothing/under/suit/navy,
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/carpet,
 /area/station/commons/dorms)
 "pnE" = (
@@ -45906,6 +45913,7 @@
 	name = "Primary AI Core Access";
 	req_access = list("ai_upload")
 	},
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/circuit,
 /area/station/ai_monitored/turret_protected/ai)
 "qeZ" = (
@@ -46804,6 +46812,7 @@
 /obj/item/clothing/under/suit/burgundy,
 /obj/effect/landmark/start/hangover,
 /obj/effect/spawner/random/structure/closet_private,
+/obj/effect/spawner/random/decoration/lavalamp,
 /turf/open/floor/carpet,
 /area/station/commons/dorms)
 "qwG" = (
@@ -56673,8 +56682,6 @@
 "tOV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
-/obj/item/reagent_containers/pill/maintenance,
-/obj/item/reagent_containers/pill/maintenance,
 /obj/item/storage/box/gum,
 /obj/item/surgicaldrill,
 /obj/structure/disposalpipe/segment{
@@ -56981,6 +56988,7 @@
 	},
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
+/mob/living/silicon/robot/shell/cell,
 /turf/open/floor/circuit,
 /area/station/ai_monitored/turret_protected/ai)
 "tUH" = (
@@ -66015,11 +66023,6 @@
 /obj/machinery/reagentgrinder{
 	pixel_y = 4
 	},
-/obj/item/reagent_containers/pill/morphine{
-	name = "Exponential Entrophy";
-	pixel_x = -9;
-	pixel_y = -4
-	},
 /turf/open/floor/iron/showroomfloor,
 /area/station/maintenance/starboard/lesser)
 "wVQ" = (
@@ -67392,20 +67395,9 @@
 	},
 /obj/effect/turf_decal/delivery,
 /obj/structure/cable,
-/obj/item/reagent_containers/pill/gravitum{
-	pixel_x = 8;
-	pixel_y = -2
-	},
 /obj/item/circuitboard/machine/portagrav{
 	pixel_x = -5;
 	pixel_y = 9
-	},
-/obj/item/reagent_containers/pill/gravitum{
-	pixel_y = 8;
-	pixel_x = 10
-	},
-/obj/item/reagent_containers/pill/gravitum{
-	pixel_x = -7
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)

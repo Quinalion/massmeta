@@ -31,6 +31,22 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 		new/datum/stack_recipe("lime comfy chair", /obj/structure/chair/comfy/lime, 2, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
 		new/datum/stack_recipe("teal comfy chair", /obj/structure/chair/comfy/teal, 2, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
 		)), \
+//////////////////// MASSMETA EDIT START ////////////////////
+/// Красивые стулья с бэя12 ///
+	new/datum/stack_recipe_list("padded chairs", list( \
+		new/datum/stack_recipe("red padded chair", /obj/structure/chair/padded/red, 2, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
+		new/datum/stack_recipe("brown padded chair", /obj/structure/chair/padded/brown, 2, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
+		new/datum/stack_recipe("teal padded chair", /obj/structure/chair/padded/teal, 2, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
+		new/datum/stack_recipe("black padded chair", /obj/structure/chair/padded/black, 2, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
+		new/datum/stack_recipe("green padded chair", /obj/structure/chair/padded/green, 2, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
+		new/datum/stack_recipe("purple padded chair", /obj/structure/chair/padded/purple, 2, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
+		new/datum/stack_recipe("blue padded chair", /obj/structure/chair/padded/blue, 2, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
+		new/datum/stack_recipe("beige padded chair", /obj/structure/chair/padded/beige, 2, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
+		new/datum/stack_recipe("lime padded chair", /obj/structure/chair/padded/lime, 2, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
+		new/datum/stack_recipe("yellow padded chair", /obj/structure/chair/padded/yellow, 2, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
+		new/datum/stack_recipe("light padded chair", /obj/structure/chair/padded/light, 2, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
+		)), \
+//////////////////// MASSMETA EDIT END ////////////////////
 	new/datum/stack_recipe_list("sofas", list(
 		new /datum/stack_recipe("sofa (middle)", /obj/structure/chair/sofa/middle, 1, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE),
 		new /datum/stack_recipe("sofa (left)", /obj/structure/chair/sofa/left, 1, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE),
@@ -707,7 +723,7 @@ GLOBAL_LIST_INIT(cardboard_recipes, list ( \
 /obj/item/stack/sheet/cardboard/fifty
 	amount = 50
 
-/obj/item/stack/sheet/cardboard/attackby(obj/item/I, mob/user, params)
+/obj/item/stack/sheet/cardboard/attackby(obj/item/I, mob/user, list/modifiers)
 	if(istype(I, /obj/item/stamp/clown) && !istype(loc, /obj/item/storage))
 		var/atom/droploc = drop_location()
 		if(use(1))
@@ -823,6 +839,7 @@ GLOBAL_LIST_INIT(bronze_recipes, list ( \
 	material_type = /datum/material/bone
 	drop_sound = null
 	pickup_sound = null
+	resistance_flags = FIRE_PROOF | LAVA_PROOF
 
 /obj/item/stack/sheet/bone/Initialize(mapload, new_amount, merge, list/mat_override, mat_amt)
 	. = ..()

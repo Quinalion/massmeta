@@ -452,12 +452,6 @@
 
 /datum/config_entry/flag/irc_first_connection_alert // do we notify the irc channel when somebody is connecting for the first time?
 
-//MASSMETA EDIT ADDITION BEGIN (discord verification) - FORCED DISCORD VERIFICATION
-/datum/config_entry/number/force_verification
-	default = null
-	min_val = 0
-//MASSMETA EDIT ADDITION END
-
 /datum/config_entry/string/ipintel_base
 	default = "check.getipintel.net"
 
@@ -788,3 +782,10 @@
  */
 /datum/config_entry/number/tgui_max_chunk_count
 	default = 32
+
+// If set, enables the "Link forum account" OOC verb
+/datum/config_entry/string/forum_link_uri
+
+/datum/config_entry/string/webmap_url
+	//ex: "https://webmap.affectedarc07.co.uk/maps/tgstation/"
+	default = ""

@@ -189,7 +189,7 @@
 	)
 	/// List of selectable large options
 	var/static/list/graffiti_large_h = list(
-		"furrypride" = CRAYON_COST_LARGE,
+		//"furrypride" = CRAYON_COST_LARGE, //MASSMETA EDIT REMOVAL (lgbt_removal)
 		"paint" = CRAYON_COST_LARGE,
 		"secborg" = CRAYON_COST_LARGE,
 		"yiffhell" = CRAYON_COST_LARGE,
@@ -425,11 +425,13 @@
 
 /obj/item/toy/crayon/proc/crayon_text_strip(text)
 	text = copytext(text, 1, MAX_MESSAGE_LEN)
-#if RU_CRAYONS // MASSMETA EDIT
-	var/static/regex/crayon_regex = new /regex(@"[^\wА-Яа-яЁё!?,.=&%#+/\-]", "ig")
-#else
+	//MASSMETA EDIT CHANGE BEGIN (ru_crayons)
+	/* ORIGINAL
 	var/static/regex/crayon_regex = new /regex(@"[^\w!?,.=&%#+/\-]", "ig")
-#endif
+	*/
+	var/static/regex/crayon_regex = new /regex(@"[^\wА-Яа-яЁё!?,.=&%#+/\-]", "ig")
+	//MASSMETA EDIT CHANGE END
+	
 	return LOWER_TEXT(crayon_regex.Replace(text, ""))
 
 /// Is this a valid object for use_on to run on?
@@ -729,17 +731,7 @@
 	icon_state = "crayonbox"
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/cardboard = SHEET_MATERIAL_AMOUNT)
-
-/obj/item/storage/crayons/Initialize(mapload)
-	. = ..()
-	atom_storage.set_holdable(
-		can_hold_list = /obj/item/toy/crayon,
-		cant_hold_list = list(
-			/obj/item/toy/crayon/spraycan,
-			/obj/item/toy/crayon/mime,
-			/obj/item/toy/crayon/rainbow,
-		),
-	)
+	storage_type = /datum/storage/crayons
 
 /obj/item/storage/crayons/PopulateContents()
 	new /obj/item/toy/crayon/red(src)

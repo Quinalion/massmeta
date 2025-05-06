@@ -48,4 +48,6 @@
 	desc = "A container designed to hold compressed matter awaiting reconstruction."
 	icon = 'modular_meta/features/tier5/icons/stock_parts.dmi'
 	icon_state = "matter_bin"
+	rating = 5
+	energy_rating = 20
 	custom_materials = list(/datum/material/iron=HALF_SHEET_MATERIAL_AMOUNT*0.8)
