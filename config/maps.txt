@@ -78,6 +78,13 @@ map hotmeta
 	votable
 endmap
 
+map protosstation
+	minplayers 0
+	maxplayers 25
+	votable
+
+endmap
+
 # Debug-only maps.
 
 map gateway_test

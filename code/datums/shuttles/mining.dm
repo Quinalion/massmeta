@@ -23,6 +23,10 @@
 	suffix = "nebula"
 	name = "labour shuttle (Nebula)"
 
+/datum/map_template/shuttle/labour/protos
+	suffix = "protos"
+	name = "labour shuttle (Protos)"
+
 // MINING SHUTTLES
 /datum/map_template/shuttle/mining
 	port_id = "mining"
@@ -52,6 +56,10 @@
 	suffix = "nebula"
 	name = "mining shuttle (Nebula)"
 
+/datum/map_template/shuttle/mining/protos
+	suffix = "protos"
+	name = "mining shuttle (Protos)"
+
 // MINING COMMON SHUTTLES
 /datum/map_template/shuttle/mining_common
 	port_id = "mining_common"
@@ -68,3 +76,7 @@
 /datum/map_template/shuttle/mining_common/northstar
 	suffix = "northstar"
 	name = "lavaland shuttle (North Star)"
+
+/datum/map_template/shuttle/mining_common/protos
+	suffix = "protos"
+	name = "lavaland shuttle (Protos)"
