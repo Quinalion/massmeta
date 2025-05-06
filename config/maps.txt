@@ -68,7 +68,10 @@ map hotmeta
 endmap
 
 map protosstation
+	minplayers 0
+	maxplayers 25
 	votable
+
 endmap
 
 # Debug-only maps.
