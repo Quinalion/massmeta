@@ -5,6 +5,8 @@
 	neck = /obj/item/clothing/neck/link_scryer/loaded
 	suit = /obj/item/clothing/suit/hooded/wintercoat/eva
 	suit_store = /obj/item/tank/internals/emergency_oxygen/double
+	ears = null
+	mask = /obj/item/clothing/mask/gas/atmos
 	box = /obj/item/storage/box/survival/centcom
 	backpack_contents = list(
 		/obj/item/storage/box/donkpockets = 1,
