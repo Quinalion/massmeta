@@ -18,7 +18,6 @@
 #include "code\modules\clothing\clothing.dm"
 #include "code\modules\clothing\suits\chaplainsuits.dm"
 #include "code\modules\mob\living\carbon\human\emote.dm"
-#include "code\obj\items\clothing\gloves.dm"
 #include "code\datums\components\crafting\makeshift.dm"
 #include "code\game\objects\items\devices\radio\radio.dm"
 #include "code\game\objects\items\storage\belt.dm"

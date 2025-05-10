@@ -18,7 +18,7 @@
 #include "features\cheburek_car\includes.dm"
 #include "features\colossus\includes.dm"
 #include "features\del_required_experiments\includes.dm"
-#include "features\edit_masks\includes.dm"
+#include "features\more_clothes\includes.dm"
 #include "features\gases\includes.dm"
 #include "features\hardsuits\includes.dm"
 #include "features\hierophant_club_resprite\includes.dm"
