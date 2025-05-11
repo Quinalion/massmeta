@@ -10,8 +10,7 @@
 |---------------------------|---------------------------------------------------------------------------|
 | MassMeta Code             | [https://github.com/Lambda-13/massmeta](https://github.com/Lambda-13/massmeta)    |
 | Guide to Modularization   | [./modular_meta/modularization_guide_ru.md](./massmeta/modularization_guide.md)  |
-| Lambda Discord          | [https://discord.gg/lambda](https://discord.gg/lambda13)              |
-| MassMeta Wiki             | [https://massmeta.ru](https://massmeta.ru/index.php/Заглавная_страница) |
+| Lambda Discord            | [https://discord.gg/lambda](https://discord.gg/XHRzsmG4Eq)              |
 | /TG/ Website              | [https://www.tgstation13.org](https://www.tgstation13.org)                |
 | /TG/ Codedocs             | [https://codedocs.tgstation13.org/](https://codedocs.tgstation13.org/)    |
 | /TG/ Coderbus Discord     | [https://discord.gg/Vh8TJp9](https://discord.gg/Vh8TJp9)                  |

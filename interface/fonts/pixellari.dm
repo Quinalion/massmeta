@@ -4,12 +4,11 @@
 /// Base font
 /datum/font/pixellari
 	name = "Pixellari"
-//MASSMETA EDIT CHANGE BEGIN (ru_tweak_say_font)
-/* ORIGINAL
-	font_family = 'interface/fonts/Pixellari.ttf'
-*/
-	font_family = 'interface/fonts/Pixellari_modif.ttf'
-//MASSMETA EDIT CHANGE END
+	//MASSMETA EDIT BEGIN (ru_tweak_say_font)
+	//font_family = 'interface/fonts/Pixellari.ttf'
+
+	font_family = 'interface/fonts/PixCyrillic.ttf'
+	//MASSMETA EDIT END
 
 /// For icon overlays
 /// Pixellari 12pt metrics generated using Lummox's dmifontsplus (https://www.byond.com/developer/LummoxJR/DmiFontsPlus)
