@@ -4,12 +4,11 @@
 /// Base font
 /datum/font/grand9k
 	name = "Grand9K Pixel"
-//MASSMETA EDIT CHANGE BEGIN (ru_tweak_say_font)
-/* ORIGINAL
-	font_family = 'interface/fonts/Grand9K_Pixel.ttf'
-*/
-	font_family = 'interface/fonts/Grand9K_Pixel_modif.ttf'
-//MASSMETA EDIT CHANGE END
+	//MASSMETA EDIT BEGIN (ru_tweak_say_font)
+	//font_family = 'interface/fonts/Grand9K_Pixel.ttf'
+
+	font_family = 'interface/fonts/Grand9K_Pixel_Rus.ttf'
+	//MASSMETA EDIT END
 
 /// For icon overlays
 /// Grand9K 6pt metrics generated using Lummox's dmifontsplus (https://www.byond.com/developer/LummoxJR/DmiFontsPlus)
