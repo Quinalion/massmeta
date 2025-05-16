@@ -70,8 +70,6 @@
     . = ..()
     START_PROCESSING(SSmachines, src)
     materials = AddComponent(/datum/component/remote_materials, "bsm", mapload)
-	RefreshParts()
-	icon_state = "bsm_idle"
 
 /obj/machinery/mineral/bluespace_miner/Destroy()
     materials = null
