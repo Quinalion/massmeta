@@ -20,5 +20,5 @@
 		"Cuban Pete" = "flag_cuba",
 	)
 
-datum/loadout_item/accessory/pride
+/datum/loadout_item/accessory/pride
 	name = "Patriotic Pin"
