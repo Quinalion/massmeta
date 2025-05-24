@@ -29,6 +29,7 @@
 	name = "Water-Ruin 5"
 	id = "waterruin5"
 	suffix = "waterplanet_ruin5.dmm"
+	cost = 0
 
 /datum/map_template/ruin/rainworld/six
 	name = "Water-Ruin 6"
@@ -49,3 +50,4 @@
 	name = "Water-Ruin 9"
 	id = "waterruin9"
 	suffix = "waterplanet_ruin9.dmm"
+	cost = 0
