@@ -175,7 +175,7 @@
 	righthand_file = 'modular_meta/features/antagonists/icons/bloodsuckers/bs_rightinhand.dmi'
 	block_chance = 75
 
-/obj/item/shield/bloodsucker/Initialize(mapload)
+/obj/item/shield/bloodsucker/Initialize()
 	. = ..()
 	ADD_TRAIT(src, TRAIT_NODROP, BLOODSUCKER_TRAIT)
 

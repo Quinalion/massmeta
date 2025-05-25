@@ -17,7 +17,7 @@
 	var/static/mutable_appearance/armrest
 
 // Add rotating and armrest
-/obj/structure/bloodsucker/bloodthrone/Initialize(mapload)
+/obj/structure/bloodsucker/bloodthrone/Initialize()
 	AddComponent(/datum/component/simple_rotation, ROTATION_IGNORE_ANCHORED)
 	if(!armrest)
 		armrest = mutable_appearance('modular_meta/features/antagonists/icons/bloodsuckers/vamp_obj_64.dmi', "thronearm")
