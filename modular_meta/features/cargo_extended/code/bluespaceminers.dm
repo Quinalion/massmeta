@@ -19,7 +19,7 @@
 	description = "Automatic miners that extract money and ore in exchange require a colossal amount of energy."
 	prereq_ids = list(TECHWEB_NODE_BLUESPACE_TRAVEL, TECHWEB_NODE_PROGRAMMED_SERVER, TECHWEB_NODE_TELECOMS)
 	design_ids = list("bluemine", "cryptominer")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_5_POINTS)
 	announce_channels = list(RADIO_CHANNEL_SCIENCE, RADIO_CHANNEL_SUPPLY)
 
 /datum/techweb_node/syndie_mining
@@ -28,7 +28,7 @@
 	description = "Miner banned by Nanotrasen due to greater instability than the first version."
 	prereq_ids = list(TECHWEB_NODE_AUTOMINERS, TECHWEB_NODE_SYNDICATE_BASIC)
 	design_ids = list("cryptominersyndie")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_5_POINTS)
 	announce_channels = list(RADIO_CHANNEL_SCIENCE, RADIO_CHANNEL_SUPPLY)
 
 // Схема в импринтере
