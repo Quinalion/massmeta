@@ -101,10 +101,6 @@
 	QDEL_NULL(cargo_radio)
 	return ..()
 
-/obj/machinery/cryptominer/deconstruct(disassembled = TRUE)
-	STOP_PROCESSING(SSmachines,src)
-	return ..()
-
 /obj/machinery/cryptominer/attackby(obj/item/W, mob/living/user, params)
 	if(default_deconstruction_screwdriver(user, icon_state, icon_state, W))
 		return
