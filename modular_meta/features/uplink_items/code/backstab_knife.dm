@@ -8,7 +8,7 @@
 	. = ..()
 	. += span_danger("\The [src] has a [nt ? "Nanotrasen" : "Syndicate"] marking on the blade.")
 
-/obj/item/switchblade/backstab/Initialize()
+/obj/item/switchblade/backstab/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/backstabs, 1.75) // 35 damage
 
