@@ -48,6 +48,12 @@
  * * user The mob choosing a reskin option
  */
 /obj/item/proc/reskin_obj(mob/user)
+	// MASSMETA EDIT BEGIN (more_clothes)
+	/// alternative reskin for old sptites
+	if(uses_advanced_reskins)
+		return
+	// MASSMETA EDIT END
+
 	if(!LAZYLEN(unique_reskin))
 		return
 
