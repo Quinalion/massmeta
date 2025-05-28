@@ -124,7 +124,7 @@
 /// File location for eigenstasium lines
 #define EIGENSTASIUM_FILE "eigenstasium.json"
 /// File location for hallucination lines
-#define HALLUCINATION_FILE "massmeta/hallucination.json" //MASSMETA EDIT CHANGE - ORIGINAL: #define HALLUCINATION_FILE "hallucination.json"
+#define HALLUCINATION_FILE "massmeta/hallucination_ru.json" //MASSMETA EDIT CHANGE - ORIGINAL: #define HALLUCINATION_FILE "hallucination.json"
 /// File location for ninja lines
 #define NINJA_FILE "ninja.json"
 /// File loation for title splashes

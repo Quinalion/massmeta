@@ -8,7 +8,7 @@
 	var/mob/M = usr
 	
 	if(!uses_advanced_reskins)
-		return ..()
+		return
 	if(!LAZYLEN(unique_reskin))
 		return
 
