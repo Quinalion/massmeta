@@ -5,7 +5,7 @@
 	// MASSMETA EDIT BEGIN (more_clothes)
 	/// alternative reskin for old sptites
 	if(uses_advanced_reskins)
-		return
+		return NONE
 	// MASSMETA EDIT END
 
 	if(!user.can_perform_action(src, NEED_DEXTERITY))

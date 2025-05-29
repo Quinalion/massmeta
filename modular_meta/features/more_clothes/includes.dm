@@ -1,6 +1,5 @@
 #include "code\_defines\alt_clothes.dm"
 
-//#include "code\resprite_clothes_module\item.dm"
 #include "code\resprite_clothes_module\verb.dm"
 
 #include "code\captain_gloves.dm"

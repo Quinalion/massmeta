@@ -1,13 +1,14 @@
 /obj/item
 	var/uses_advanced_reskins = FALSE
 
-/obj/item/verb/clothing_reskin()
+/obj/item/clothing/verb/clothing_reskin()
 	set name = "Reskin Clothes"
 	set category = "Object"
 	set src in usr
 	var/mob/M = usr
 	
 	if(!uses_advanced_reskins)
+		to_chat(M, "[src] has no reskins available.")
 		return
 	if(!LAZYLEN(unique_reskin))
 		return
