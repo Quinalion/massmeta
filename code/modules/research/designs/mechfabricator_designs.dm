@@ -2825,7 +2825,7 @@
 	)
 
 // MASSMETA EDIT START: Добавляем ИИ мозг в крафт
-/datum/design/posibrain
+/datum/design/ai_cyberbrain
 	name = "AI-uplink brain"
 	desc = "A specially designed brain that allows AI to connect to a fully augmented body."
 	id = "ai_cyberbrain"
