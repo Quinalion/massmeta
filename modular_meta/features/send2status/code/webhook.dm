@@ -4,7 +4,7 @@
     if (!webhook_url)
         return
 
-    var/color_code = 0x36393F
+    var/color_code = 0x3498DB
     if (color_override)
         switch(lowertext(color_override))
             if ("green")   color_code = 0x57F287
