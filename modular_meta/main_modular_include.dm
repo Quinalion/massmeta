@@ -42,6 +42,7 @@
 #include "features\mod_vend\includes.dm"
 #include "features\roundstart_shell\includes.dm"
 #include "features\telescience\includes.dm"
+#include "features\send2status\include.dm"
 /* -- REVERTS -- */
 
 #include "reverts\re_beheading\includes.dm"
