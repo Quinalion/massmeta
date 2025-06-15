@@ -89,18 +89,13 @@
 			candidates.Remove(player)
 
 /datum/dynamic_ruleset/midround/bloodsucker/execute()
-	var/mob/selected_mobs = pick(living_players)
-	assigned += selected_mobs.mind
-	living_players -= selected_mobs
-	var/datum/mind/candidate_mind = selected_mobs.mind
-	var/datum/antagonist/bloodsucker/bloodsuckerdatum = candidate_mind.make_bloodsucker()
-	if(!bloodsuckerdatum)
-		assigned -= selected_mobs.mind
-		message_admins("[ADMIN_LOOKUPFLW(selected_mobs)] was selected by the [name] ruleset, but couldn't be made into a Bloodsucker.")
-		return FALSE
-	bloodsuckerdatum.bloodsucker_level_unspent = rand(2,3)
-	message_admins("[ADMIN_LOOKUPFLW(selected_mobs)] was selected by the [name] ruleset and has been made into a midround Bloodsucker.")
-	log_game("DYNAMIC: [key_name(selected_mobs)] was selected by the [name] ruleset and has been made into a midround Bloodsucker.")
+	var/mob/M = pick(candidates)
+	assigned += M
+	candidates -= M
+	var/datum/antagonist/bloodsucker/newBloodsucker = new
+	M.mind.add_antag_datum(newBloodsucker)
+	message_admins("[ADMIN_LOOKUPFLW(M)] was selected by the [name] ruleset and has been made into a midround traitor.")
+	log_dynamic("[key_name(M)] was selected by the [name] ruleset and has been made into a midround traitor.")
 	return TRUE
 
 //////////////////////////////////////////////
