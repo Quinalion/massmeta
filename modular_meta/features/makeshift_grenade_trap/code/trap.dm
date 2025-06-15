@@ -42,8 +42,7 @@
 		if(ismouse(MM))
 			return
 		if(ishuman(AM))
-			var/mob/living/carbon/human/H
-			if(H.move_intent == MOVE_INTENT_WALK)
+			if(AM.move_intent == MOVE_INTENT_WALK)
 				to_chat(AM, span_notice("Carefully step over the [src]."))
 				return
 	activate()
