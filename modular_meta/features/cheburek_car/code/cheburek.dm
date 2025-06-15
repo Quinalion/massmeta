@@ -150,7 +150,7 @@ Some memes and gags included.
 ///Leak oil when the cheburek moves if was damaged
 /obj/vehicle/sealed/car/cheburek/proc/cover_in_oil()
 	SIGNAL_HANDLER
-	new /obj/effect/decal/cleanable/oil/slippery(loc)
+	new /obj/effect/decal/cleanable/blood/oil/slippery(loc)
 
 ///Stops dropping oil after the time has run up
 /obj/vehicle/sealed/car/cheburek/proc/stop_dropping_oil()
