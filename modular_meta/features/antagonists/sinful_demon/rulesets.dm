@@ -26,12 +26,13 @@
 	cost = 10
 	scaling_cost = 9
 	requirements = list(10,10,10,10,10,10,10,10,10,10)
+	antag_cap = list("denominator" = 24)
 
 /datum/dynamic_ruleset/roundstart/sinfuldemon/pre_execute(population)
 	. = ..()
-	var/num_sinfuldemons = get_antag_cap(population) * (scaled_times + 1)
+	var/num_sinfuldemon = get_antag_cap(population) * (scaled_times + 1)
 
-	for(var/i = 1 to num_sinfuldemons)
+	for(var/i = 1 to num_sinfuldemon)
 		if(candidates.len <= 0)
 			break
 		var/mob/selected_mobs = pick_n_take(candidates)
@@ -67,8 +68,3 @@
 	cost = 10
 	requirements = list(10,10,10,10,10,10,10,10,10,10)
 	repeatable = FALSE
-
-/datum/dynamic_ruleset/latejoin/sinfuldemon/execute()
-	var/mob/latejoiner = pick(candidates) // This should contain a single player, but in case.
-	assigned += latejoiner.mind
-	return TRUE
