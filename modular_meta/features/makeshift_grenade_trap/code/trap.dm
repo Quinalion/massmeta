@@ -21,7 +21,7 @@
 
 /obj/structure/tripwire/on_craft_completion(list/components, datum/crafting_recipe/current_recipe, atom/crafter)
 	. = ..()
-	stretching = locate(obj/item/grenade) in contents
+	stretching = locate(/obj/item/grenade) in contents
 
 	message_admins("[ADMIN_LOOKUPFLW(crafter)] поставил растяжку[ADMIN_COORDJMP(crafter)]")
 	log_game("[key_name(crafter)] поставил растяжку[COORD(crafter)]")
