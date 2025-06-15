@@ -42,7 +42,7 @@
 		if(ismouse(MM))
 			return
 		if(iscarbon(MM))
-			var/mob/C = MM
+			var/mob/living/carbon/C = MM
 			if(C.move_intent == MOVE_INTENT_WALK)
 				to_chat(C, span_notice("Carefully step over the [src]."))
 				return
