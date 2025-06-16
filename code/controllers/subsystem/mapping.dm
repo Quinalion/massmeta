@@ -458,7 +458,7 @@ Used by the AI doomsday and the self-destruct nuke.
 		LoadGroup(FailedZs, "Lavaland", "map_files/Mining", "Lavaland.dmm", default_traits = ZTRAITS_LAVALAND)
 
 //MASSMETA EDIT ADDICTION BEGIN (Waterplanet)
-	if(current_map.minetype == MINETYPE_OCEAN)
+	else if(current_map.minetype == MINETYPE_OCEAN)
 		LoadGroup(FailedZs, "Ocean", "map_files/Mining", "Ocean.dmm", default_traits = ZTRAITS_OCEAN)
 //MASSMETA EDIT ADDICTION END
 
