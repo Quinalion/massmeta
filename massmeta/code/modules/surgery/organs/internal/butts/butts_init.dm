@@ -11,7 +11,7 @@
 		butt.Insert(spawned)
 
 //heal butt
-/mob/living/carbon/regenerate_organs(regenerate_existing = FALSE)
+/mob/living/carbon/regenerate_organs(remove_hazardous = FALSE)
 	. = ..()
 	var/obj/item/organ/internal/butt/butt = get_organ_slot(ORGAN_SLOT_BUTT)
 	if(!butt)
