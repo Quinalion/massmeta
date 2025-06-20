@@ -29,6 +29,7 @@
 	back = /obj/item/storage/backpack/satchel/leather
 	shoes = /obj/item/clothing/shoes/sandal
 	mask = /obj/item/clothing/mask/gas/tiki_mask
+	head = null
 	l_hand = /obj/item/gun/ballistic/bow
 	r_hand = /obj/item/ammo_casing/arrow
 	backpack_contents = list(
