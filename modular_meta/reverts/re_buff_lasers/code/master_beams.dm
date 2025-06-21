@@ -2,7 +2,7 @@
 /obj/projectile/beam/scatter
 	damage = 12
 	wound_bonus = -20
-	bare_wound_bonus = 0
+	exposed_wound_bonus = 0
 
 /obj/projectile/beam/laser
 	damage = 20

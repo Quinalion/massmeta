@@ -32,7 +32,7 @@
 		var/multi = backstab_multiplier - 1
 		var/dmg = source.force * multi
 		if(dmg) // Truthy because backstabs can heal lol
-			target.apply_damage(dmg, source.damtype, BODY_ZONE_CHEST, 0, source.wound_bonus*multi, source.bare_wound_bonus*multi, source.sharpness*multi)
+			target.apply_damage(dmg, source.damtype, BODY_ZONE_CHEST, 0, source.wound_bonus*multi, source.exposed_wound_bonus*multi, source.sharpness*multi)
 			log_combat(user, target, "scored a backstab", source.name, "(DAMTYPE: [uppertext(source.damtype)])")
 			if(iscarbon(target))
 				target.emote("scream") // SPY AROUND HERE
