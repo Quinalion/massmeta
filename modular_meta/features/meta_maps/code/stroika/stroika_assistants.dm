@@ -11,12 +11,9 @@
 	backpack_contents = list(
 		/obj/item/storage/box/donkpockets = 1,
 		/obj/item/holosign_creator/atmos = 1,
-		/obj/item/electronics/apc = 1,
 		/obj/item/storage/belt/utility/full/powertools/rcd = 1,
 		/obj/item/pickaxe/mini = 1,
-		/obj/item/circuitboard/machine/circuit_imprinter = 1,
-		/obj/item/circuitboard/machine/protolathe = 1,
-		/obj/item/circuitboard/machine/autolathe = 1,
+		/obj/item/storage/box/circuitboard = 1,
 	)
 	glasses = /obj/item/clothing/glasses/meson/engine
 	gloves = /obj/item/clothing/gloves/color/yellow
@@ -28,3 +25,14 @@
 	r_pocket = /obj/item/climbing_hook
 	implants = list(/obj/item/implant/spell)
 	skillchips = list(/obj/item/skillchip/job/engineer)
+
+// коробка с платами
+/obj/item/storage/box/circuitboard
+	name = "box of basic circuitboards"
+	desc = "A box full of beautiful fiberglass plates."
+
+/obj/item/storage/box/circuitboard/PopulateContents()
+	new /obj/item/circuitboard/machine/circuit_imprinter(src)
+	new	/obj/item/circuitboard/machine/protolathe(src)
+	new	/obj/item/circuitboard/machine/autolathe(src)
+	new /obj/item/electronics/apc(src)

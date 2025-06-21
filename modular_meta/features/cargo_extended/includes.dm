@@ -1,5 +1,5 @@
-#include "code\cargo_teleporter.dm"
 #include "code\bluespaceminers.dm"
+#include "code\cargo_teleporter.dm"
 #include "code\cryptominers.dm"
 
 /datum/modpack/cargo_extended
