@@ -13,7 +13,7 @@
 	var/group
 	/// A list of your modpack's dependencies. If you use obj from another modpack - put it here.
 	var/list/mod_depends = list()
-	
+
 	/// Is modpack visible, (for hidden modpacks, like "example" one)
 	var/visible = TRUE // by default set to TRUE
 
@@ -44,7 +44,7 @@
 // Modpacks TGUI
 /datum/modpack/ui_assets(mob/user)
 	return list(
-		get_asset_datum(/datum/asset/spritesheet/simple/modpacks),
+		get_asset_datum(/datum/asset/spritesheet_batched/modpacks),
 	)
 
 /datum/modpack/ui_state()
@@ -62,12 +62,12 @@
 	.["features"] = list()
 	.["translations"] = list()
 	.["reverts"] = list()
-	
-	var/datum/asset/spritesheet/simple/assets = get_asset_datum(/datum/asset/spritesheet/simple/modpacks)
+
+	var/datum/asset/spritesheet_batched/assets = get_asset_datum(/datum/asset/spritesheet_batched/modpacks)
 	for(var/datum/modpack/modpack as anything in SSmodpacks.loaded_modpacks)
 		if (!modpack.visible) // if modpack hidden then do not add it to list
 			continue
-		
+
 		var/list/modpack_data = list(
 			"name" = modpack.name,
 			"desc" = modpack.desc,
@@ -84,4 +84,4 @@
 			.["reverts"] += list(modpack_data)
 		else
 			CRASH("Modpack [modpack.name] has bad group name or queued for deletion.")
-		// TODO: add here events group, only visible for admins 
+		// TODO: add here events group, only visible for admins
