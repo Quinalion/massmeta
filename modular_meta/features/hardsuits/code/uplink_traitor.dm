@@ -12,7 +12,7 @@
 	purchasable_from = ~(UPLINK_NUKE_OPS | UPLINK_CLOWN_OPS)
 
 /datum/uplink_item/suits/hardsuit/elite_traitor
-	name = "Elite Syndicate hardsuit"
+	name = "Elite Syndicate Hardsuit"
 	desc = "An upgraded, elite version of the Syndicate hardsuit. It features fireproofing, and also \
 			provides the user with superior armor and mobility compared to the standard Syndicate hardsuit."
 	item = /obj/item/clothing/suit/space/hardsuit/syndi/elite
